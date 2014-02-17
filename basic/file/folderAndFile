@@ -1,0 +1,39 @@
+// this file contains some methods for creating and deleting a folder and a file
+
+//1. create a folder
+public void createDir(String path)...{
+  File dir=new File(path);
+  if(!dir.exists())
+    dir.mkdir();
+}
+
+//2. create a new file
+public void createFile(String path,String filename) throws IOException...{
+  File file=new File(path+"/"+filename);
+  if(!file.exists())
+    file.createNewFile();
+}
+
+//3. delete a file
+public void delFile(String path,String filename)...{
+  File file=new File(path+"/"+filename);
+  if(file.exists()&&file.isFile())
+    file.delete();
+}
+
+
+//4. delete a folder
+public void delDir(String path)...{
+  File dir=new File(path);
+  if(dir.exists())...{
+    File[] tmp=dir.listFiles();
+    for(int i=0;i<tmp.length;i++)...{
+      if(tmp[i].isDirectory())...{
+        delDir(path+"/"+tmp[i].getName());
+      }
+      else...{tmp[i].delete();
+      }
+    }
+    dir.delete();
+  }
+}
