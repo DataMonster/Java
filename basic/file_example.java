@@ -9,63 +9,63 @@ import java.io.RandomAccessFile;
 import java.io.Reader;  
 public class ReadFromFile {  
 /** 
-* Read file by byte, for .txt, sound and image files
+* Read file by byte, for sound and image files
 * @param fileName targetfile name
 */  
 public static void readFileByBytes(String fileName){  
 File file = new File(fileName);  
 InputStream in = null;  
+
 try {  
-System.out.println("Read file by byte");  
-// One byte at each time  
-in = new FileInputStream(file);  
-int tempbyte;  
-while((tempbyte=in.read()) != -1){  
-  System.out.write(tempbyte);  
-}  
-in.close();  
+  System.out.println("Read file by byte");  
+  // One byte at each time  
+  in = new FileInputStream(file);  
+  int tempbyte;  
+  while((tempbyte=in.read()) != -1){  
+    System.out.write(tempbyte);  
+  }  
+  in.close();  
 } catch (IOException e) {  
-e.printStackTrace();  
-return;  
+  e.printStackTrace();  
+  return;  
 }  
 try {  
-System.out.println("以字节为单位读取文件内容，一次读多个字节：");  
-//一次读多个字节  
-byte[] tempbytes = new byte[100];  
-int byteread = 0;  
-in = new FileInputStream(fileName);  
-ReadFromFile.showAvailableBytes(in);  
-//读入多个字节到字节数组中，byteread为一次读入的字节数  
-while ((byteread = in.read(tempbytes)) != -1){  
-System.out.write(tempbytes, 0, byteread);  
-}  
+  System.out.println("Read file by byte, multiple bytes one time");  
+  //multiple bytes one time
+  byte[] tempbytes = new byte[100];  
+  int byteread = 0;  
+  in = new FileInputStream(fileName);  
+  ReadFromFile.showAvailableBytes(in);  
+  //byteread = length
+  while ((byteread = in.read(tempbytes)) != -1){  
+    System.out.write(tempbytes, 0, byteread);  
+  }  
 } catch (Exception e1) {  
-e1.printStackTrace();  
+  e1.printStackTrace();  
 } finally {  
-if (in != null){  
-try {  
-in.close();  
-} catch (IOException e1) {  
+  if (in != null){  
+  try {  
+    in.close();  
+  } catch (IOException e1) {  
 }  
 }  
 }  
 }  
+
 /** 
-* 以字符为单位读取文件，常用于读文本，数字等类型的文件 
-* @param fileName 文件名 
+* Read file by char, use for text and number files
+* @param fileName
 */  
 public static void readFileByChars(String fileName){  
 File file = new File(fileName);  
 Reader reader = null;  
 try {  
-System.out.println("以字符为单位读取文件内容，一次读一个字节：");  
-// 一次读一个字符  
+System.out.println("Read file by char, one char each time");  
 reader = new InputStreamReader(new FileInputStream(file));  
 int tempchar;  
 while ((tempchar = reader.read()) != -1){  
-//对于windows下，rn这两个字符在一起时，表示一个换行。  
-//但如果这两个字符分开显示时，会换两次行。  
-//因此，屏蔽掉r，或者屏蔽n。否则，将会多出很多空行。  
+//because under windows, rn mean new line, when these two chars split, there will be two new lines.  
+//delete r can deduce useless blank lines 
 if (((char)tempchar) != 'r'){  
 System.out.print((char)tempchar);  
 }  
@@ -75,14 +75,11 @@ reader.close();
 e.printStackTrace();  
 }  
 try {  
-System.out.println("以字符为单位读取文件内容，一次读多个字节：");  
-//一次读多个字符  
+System.out.println("Read file by chars, multiple chars each time");  
 char[] tempchars = new char[30];  
 int charread = 0;  
 reader = new InputStreamReader(new FileInputStream(fileName));  
-//读入多个字符到字符数组中，charread为一次读取字符数  
 while ((charread = reader.read(tempchars))!=-1){  
-//同样屏蔽掉r不显示  
 if ((charread == tempchars.length)&&(tempchars[tempchars.length-1] != 'r')){  
 System.out.print(tempchars);  
 }else{  
@@ -106,21 +103,21 @@ reader.close();
 }  
 }  
 }  
+
 /** 
-* 以行为单位读取文件，常用于读面向行的格式化文件 
-* @param fileName 文件名 
+* Read file by line
+* @param fileName
 */  
 public static void readFileByLines(String fileName){  
 File file = new File(fileName);  
 BufferedReader reader = null;  
 try {  
-System.out.println("以行为单位读取文件内容，一次读一整行：");  
+System.out.println("Read file by line: ");  
 reader = new BufferedReader(new FileReader(file));  
 String tempString = null;  
 int line = 1;  
-//一次读入一行，直到读入null为文件结束  
 while ((tempString = reader.readLine()) != null){  
-//显示行号  
+//line number 
 System.out.println("line " + line + ": " + tempString);  
 line++;  
 }  
@@ -137,25 +134,25 @@ reader.close();
 }  
 }  
 /** 
-* 随机读取文件内容 
-* @param fileName 文件名 
+* Random read file content
+* @param fileName 
 */  
 public static void readFileByRandomAccess(String fileName){  
 RandomAccessFile randomFile = null;  
 try {  
-System.out.println("随机读取一段文件内容：");  
-// 打开一个随机访问文件流，按只读方式  
+System.out.println("Random read file ");  
+// open a file using read-only
 randomFile = new RandomAccessFile(fileName, "r");  
-// 文件长度，字节数  
+// file length
 long fileLength = randomFile.length();  
-// 读文件的起始位置  
+// Start pos  
 int beginIndex = (fileLength > 4) ? 4 : 0;  
-//将读文件的开始位置移到beginIndex位置。  
+//move to beginIndex pos  
 randomFile.seek(beginIndex);  
 byte[] bytes = new byte[10];  
 int byteread = 0;  
-//一次读10个字节，如果文件内容不足10个字节，则读剩下的字节。  
-//将一次读取的字节数赋给byteread  
+//each time at most 10 bytes 
+//length = readbyte
 while ((byteread = randomFile.read(bytes)) != -1){  
 System.out.write(bytes, 0, byteread);  
 }  
@@ -171,46 +168,48 @@ randomFile.close();
 }  
 }  
 /** 
-* 显示输入流中还剩的字节数 
+* display inputstream remaining byte number
 * @param in 
 */  
 private static void showAvailableBytes(InputStream in){  
 try {  
-System.out.println("当前字节输入流中的字节数为:" + in.available());  
+System.out.println("current inputstream byte number is " + in.available());  
 } catch (IOException e) {  
 e.printStackTrace();  
 }  
 }  
 public static void main(String[] args) {  
-String fileName = "C:/temp/newTemp.txt";  
+String fileName = "target.txt";  
 ReadFromFile.readFileByBytes(fileName);  
 ReadFromFile.readFileByChars(fileName);  
 ReadFromFile.readFileByLines(fileName);  
 ReadFromFile.readFileByRandomAccess(fileName);  
 }  
 }  
-二、将内容追加到文件尾部  
+
+
+//add contents to the end of a file  
 import java.io.FileWriter;  
 import java.io.IOException;  
 import java.io.RandomAccessFile;  
 /** 
-* 将内容追加到文件尾部 
+* 
 */  
 public class AppendToFile {  
 /** 
-* A方法追加文件：使用RandomAccessFile 
-* @param fileName 文件名 
-* @param content 追加的内容 
+* RandomAccessFile 
+* @param fileName 
+* @param content  
 */  
 public static void appendMethodA(String fileName,  
   
 String content){  
 try {  
-// 打开一个随机访问文件流，按读写方式  
+// random access a file using rw
 RandomAccessFile randomFile = new RandomAccessFile(fileName, "rw");  
-// 文件长度，字节数  
+// byte number 
 long fileLength = randomFile.length();  
-//将写文件指针移到文件尾。  
+//pointer move to the end of the file  
 randomFile.seek(fileLength);  
 randomFile.writeBytes(content);  
 randomFile.close();  
@@ -219,13 +218,13 @@ e.printStackTrace();
 }  
 }  
 /** 
-* B方法追加文件：使用FileWriter 
+* FileWriter 
 * @param fileName 
 * @param content 
 */  
 public static void appendMethodB(String fileName, String content){  
 try {  
-//打开一个写文件器，构造函数中的第二个参数true表示以追加形式写文件  
+//open a writer method, use 'true' means to add contents to the file
 FileWriter writer = new FileWriter(fileName, true);  
 writer.write(content);  
 writer.close();  
@@ -234,17 +233,17 @@ e.printStackTrace();
 }  
 }  
 public static void main(String[] args) {  
-String fileName = "C:/temp/newTemp.txt";  
+String fileName = "target.txt";  
 String content = "new append!";  
-//按方法A追加文件  
+// 
 AppendToFile.appendMethodA(fileName, content);  
 AppendToFile.appendMethodA(fileName, "append end. n");  
-//显示文件内容  
+// 
 ReadFromFile.readFileByLines(fileName);  
-//按方法B追加文件  
+// 
 AppendToFile.appendMethodB(fileName, content);  
 AppendToFile.appendMethodB(fileName, "append end. n");  
-//显示文件内容  
+// 
 ReadFromFile.readFileByLines(fileName);  
 }  
 }  
