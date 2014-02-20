@@ -10,7 +10,7 @@ public class Queueimp {
 	public void queueexample(){
 		Queue q1 = new LinkedList();
 		q1.add("test1");
-		q1.add(1);
+		q1.add(12);
 		System.out.println(q1.peek());
 		System.out.println(q1.peek());
 		q1.remove();
