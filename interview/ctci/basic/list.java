@@ -3,6 +3,8 @@
 */
 
 //ArrayList
+package com.dreamx.collection;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -41,6 +43,39 @@ public class List {
 		
 	}
 	
+	public void advancedExample(){
+		//ArrayList has three main constructors shown:
+		//ArrayList(), ArrayList(Collection<? extends E> c), ArrayList(int Capacity)
+		long heapSize = Runtime.getRuntime().freeMemory();
+		System.out.println("Size : "+ heapSize);
+		
+		ArrayList<String> list1 = new ArrayList<String> ();
+		//ArrayList<String> list2 = new ArrayList<String> ();
+		list1.add("test");
+		
+		//ensureCapacity(int) method does influence the freeMemory remain.
+		System.out.println("Size before take larger memory space: "+ heapSize);
+		
+		list1.ensureCapacity(100000);
+		heapSize = Runtime.getRuntime().freeMemory();
+		System.out.println("Size after take larger memory space: "+ heapSize);
+		
+		//trimToSize() can reduce the space and set the arraylist to the actual size, but cannot really influence the memory space
+		list1.trimToSize();
+		heapSize = Runtime.getRuntime().freeMemory();
+		System.out.println("Size after trim memory space: "+ heapSize);
+	}
+	
+	public void ArrayListToArray(){
+		ArrayList<String> list1 = new ArrayList<String> ();
+		list1.add("1");
+		list1.add("second");
+		String array[] = new String[list1.size()];
+		list1.toArray(array);
+		for(String s:array)
+		System.out.println(s);
+	}
+	
 	/**
 	 * @param args
 	 */
@@ -48,9 +83,12 @@ public class List {
 		// TODO Auto-generated method stub
 		List newList = new List();
 		newList.exampleList();
+		newList.advancedExample();
+		newList.ArrayListToArray();
+		
 	}
-}
 
+}
 
 //LinkedList
 
