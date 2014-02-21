@@ -18,18 +18,16 @@
  *  "011"
  * 
  */
- 
+import java.util.Stack; 
 public class computeString{
 public String badd(String x, String y) {
-    
-	Stack<Integer> stack1 = new Stack<Integer> ();
+    Stack<Integer> stack1 = new Stack<Integer> ();
     Stack<Integer> stack2 = new Stack<Integer> ();
     Stack<Integer> stack3 = new Stack<Integer> ();
-    String z = null;
+    String z = "";
     
     for(int i=0; i <x.length(); i++){
     	int xint = Character.getNumericValue(x.charAt(i));
-    	System.out.println(xint);
         stack1.push(xint);
     }
     for(int j=0; j <y.length(); j++){
@@ -126,37 +124,29 @@ public String badd(String x, String y) {
     }
     }
     
-    LinkedList<Integer> list = new LinkedList<Integer> ();
+    if(remain == 1){
+    	stack3.push(remain);
+    }
+    else{stack3.push(0);}
+    
     while (!stack3.empty()){
-        System.out.println(stack3.pop());
-    	//list.add(stack3.pop());
+    	z = z+stack3.pop();
     }  
-    z= list.toString();
     return z;
  }
- 
-/* int getInt(String x){
-     result =0;
-     for (int i = 0; i<x.length();i++){
-         result = result + int(x.charAt(i))*Math.pow(2,x.length()-1-i); 
-     }
-     return result;
- }
- */
- 
-	 
+ 	 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Test11 test11 = new Test11();
-		String a = "11";
-		String b = "10";
+		String a = "101";
+		String b = "111";
 		String c = null;
 		
 		c = test11.badd(a, b);
-		//System.out.println(c);
+		System.out.println(c);
 
 	}
 
