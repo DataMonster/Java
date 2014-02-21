@@ -2,6 +2,11 @@ import java.sql.Date;
 public class TypeChange {
   public TypeChange() {
   }
+  //change the char type to int type
+  public int charToInt(char c){
+    return Character.getNumericValue(c);
+  }
+  
   //change the string type to the int type
   public static  int stringToInt(String intstr)
   {
