@@ -14,3 +14,38 @@ There are 5 pairs with difference 4, the pairs are {0, 4}, {4, 8},
 {8, 12}, {12, 16} and {16, 20} 
 */
 //http://www.geeksforgeeks.org/count-pairs-difference-equal-k/
+
+import java.util.ArrayList;
+import java.util.List;
+public class CountDistinctPair {
+
+	public void count(int[] arr, int k){
+		List <Integer> list = new ArrayList<Integer>();
+		int[] arr2 = arr;
+		for(int i:arr){
+			for(int j:arr2){
+				if(i>j){
+					if(i-j==k){
+						list.add(i);
+						list.add(j);
+					}
+				}
+			}
+		}
+		for(int z=0;z<list.size();z++){
+			System.out.println("{"+list.get(z)+", "+list.get(++z)+"}");
+		}
+	}
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		CountDistinctPair cdp = new CountDistinctPair();
+		int[] arr = {1,3,4,6,7,9,0,13,14,12};
+		int k = 2;
+		cdp.count(arr, k);
+		
+	}
+
+}
