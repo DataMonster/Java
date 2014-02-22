@@ -14,6 +14,7 @@ There are 5 pairs with difference 4, the pairs are {0, 4}, {4, 8},
 {8, 12}, {12, 16} and {16, 20} 
 */
 //http://www.geeksforgeeks.org/count-pairs-difference-equal-k/
+//The method2 in that page is more efficient than this one
 
 import java.util.ArrayList;
 import java.util.List;
