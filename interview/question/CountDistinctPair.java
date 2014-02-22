@@ -32,6 +32,7 @@ public class CountDistinctPair {
 				}
 			}
 		}
+		System.out.println("Output Num: "+list.size()/2);
 		for(int z=0;z<list.size();z++){
 			System.out.println("{"+list.get(z)+", "+list.get(++z)+"}");
 		}
@@ -42,8 +43,8 @@ public class CountDistinctPair {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		CountDistinctPair cdp = new CountDistinctPair();
-		int[] arr = {1,3,4,6,7,9,0,13,14,12};
-		int k = 2;
+		int[] arr = {8, 12, 16, 4, 0, 20};
+		int k = 4;
 		cdp.count(arr, k);
 		
 	}
