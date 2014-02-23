@@ -43,9 +43,13 @@ Exercise:
 3. Is counting sort stable and online?
 In computer science, an online algorithm is one that can process its input piece-by-piece in a serial fashion, i.e., 
 in the order that the input is fed to the algorithm, without having the entire input available from the start. 
-In contrast, an offline algorithm is given the whole problem data from the beginning and is required to output an answer which solves the problem at hand. (For example, selection sort requires that the entire list be given before it can sort it, while insertion sort doesn't.)
+In contrast, an offline algorithm is given the whole problem data from the beginning and is required to output an answer
+which solves the problem at hand. (For example, selection sort requires that the entire list be given before it can sort
+it, while insertion sort doesn't.)
 
-An example of stable sorting on playing cards. When the cards are sorted by rank with a stable sort, the two 5s must remain in the same order in the sorted output that they were originally in. When they are sorted with a non-stable sort, the 5s may end up in the opposite order in the sorted output.
+An example of stable sorting on playing cards. When the cards are sorted by rank with a stable sort, the two 5s must 
+remain in the same order in the sorted output that they were originally in. When they are sorted with a non-stable sort,
+the 5s may end up in the opposite order in the sorted output.
 4. Thoughts on parallelizing the counting sort algorithm.
 */
 
