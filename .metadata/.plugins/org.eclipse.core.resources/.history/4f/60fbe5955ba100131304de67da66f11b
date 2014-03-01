@@ -1,0 +1,27 @@
+package edu.java.common;
+
+public class Initblock {
+	{
+		int a = 6;
+		int b = 9;
+		System.out.println(a);
+	}
+	
+	static{
+		int c = 10;
+		System.out.println(c);
+	}
+	
+	public void test(){
+		//System.out.println(this.a);
+	}
+	/**
+	 * this is the example of the initial block and static bloc of a class
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Initblock ib = new Initblock();
+		//System.out.println(ib.);
+	}
+
+}
