@@ -1,24 +1,6 @@
 package edu.java.common3;
 
-public class AbstractShape extends Shape{
-
-	@Override 
-	//all instance methods can not be static.
-	public double calPerimeter() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	public String getType() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public void test() {
-		// TODO Auto-generated method stub
-		
-	}
+public class AbstractShape {
 
 }
 
@@ -41,9 +23,4 @@ abstract class Shape{
 	public String getColor(){
 		return this.color;
 	}
-}
-
-class Circle extends AbstractShape{
-	//no need to override the methods from super class
-	
 }
