@@ -72,16 +72,12 @@ public class Cow {
 		System.out.println(sc.name);
 		
 		/*
-		 *Define grammar: OuterClass.InnerClass varName 
+		 *Define grammer: OuterClass.InnerClass varName 
 		 *Usage: for non-static inner class:  OuterInstance.new InnerConstructor
-		 *		 for static inner class: new OuterClass.InnerConstructor;
+		 *		 for static inner class: 
 		 */
 		
 		Cow.CowLeg cl = new Cow(12.3).new CowLeg(2.2, "black");
 		cl.info();
-		
-		Cow.StaticInnerClass csi = new Cow.StaticInnerClass();
-		csi.toString();
-		
 		}
 }
