@@ -5,4 +5,6 @@
 <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="edu.java.common3.Cow.CowLeg"/>
+<fullyQualifiedTypeName name="edu.java.common3.Cow.StaticInnerClass"/>
 </qualifiedTypeNameHistroy>
