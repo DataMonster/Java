@@ -22,23 +22,5 @@ public class Enumex {
 			System.out.println(s);
 		}
 		new Enumex().judge(SeasonEnum.FALL);
-		
-		//a way to get enumclass instance
-		Gender g = Enum.valueOf(Gender.class, "FEMALE");
-		g.name = "girl";
-		System.out.println(g);
-		
-		Gender g2 = Gender.FEMALE;
-		g2.name = "Alio";
-		System.out.println(g2+g2.name);
-		
-		
-		
 	}
-}
-
-enum Gender{
-	MALE, FEMALE;
-	public String name;
-	
 }

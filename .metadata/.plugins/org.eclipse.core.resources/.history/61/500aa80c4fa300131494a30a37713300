@@ -32,8 +32,6 @@ public class Enumex {
 		g2.name = "Alio";
 		System.out.println(g2+g2.name);
 		
-		
-		
 	}
 }
 
