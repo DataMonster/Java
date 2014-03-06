@@ -1,0 +1,24 @@
+package edu.java;
+
+public class test1 {
+
+	public static void modPrint(int number, int mode){
+		int temp = number/mode;
+		if (temp>=1){
+			modPrint(temp, mode);
+		}
+		int mod = (number-temp*mode)%mode;
+		String[] base2 = {"d","a","b","c"};
+		System.out.print(base2[mod]);
+	}
+
+	public static void main(String[] args) {
+		String[] base = {"a","b","c","d","aa","ab","ac","ad","ba","bb","bc","bd","ca","cb","cc","cd",""};
+		modPrint(7,4);
+		//
+		//
+		//System.out.println(3%7);
+		//System.out.println(7%11);
+	}
+
+}
