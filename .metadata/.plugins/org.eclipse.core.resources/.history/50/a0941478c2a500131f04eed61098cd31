@@ -43,7 +43,7 @@ Output List: 12->16->20->18->14
 
 reference: http://www.geeksforgeeks.org/given-linked-list-reverse-alternate-nodes-append-end/
 
-answer: LinkedListReverse.java
+
 
 *******************************************************************
 Q5. Given two rectangles, find if the given two rectangles overlap or not.
