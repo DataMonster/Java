@@ -33,10 +33,5 @@ public class PrintRecursive {
 		//input: 10003, ouput: bdwsy
 		modPrint(1000323,26,base);
 		
-		int x = -1;  
-	       System.out.println(x>>>29);  
-	       System.out.println(x>>>30);  
-	       System.out.println(x>>>31);
-		
 	}
 }

@@ -1,0 +1,9 @@
+package com.march.question1;
+
+/*
+ * Q3. Given a number having only one ¡¯1¡ä and all other ¡¯0¡äs in its binary representation, find position of the only set bit. 
+Source: Microsoft Interview | 18
+ */
+public class FindOnePos {
+
+}

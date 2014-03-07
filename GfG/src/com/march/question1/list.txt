@@ -1,6 +1,6 @@
 In this package, the following questions will be coded in. modified date: 03/06/14
 
-
+*******************************************************************
 Q1. you have a array A{a,b,c,d,e,f...z, aa,ab...az, ba,bb...bz,...,aaa..a,aaa...b,
 ...,aaa...z}, give a input number num, output A[num-1].
 
@@ -21,11 +21,15 @@ Output: 0 1 2 3 4 5 6 7 8 9 10 11
 
 reference:  http://www.geeksforgeeks.org/merge-k-sorted-arrays/
 
+answer: MergeKSorted.java
+
 *******************************************************************
 Q3. Given a number having only one ¡¯1¡ä and all other ¡¯0¡äs in its binary representation, find position of the only set bit. 
 Source: Microsoft Interview | 18
 
 reference: http://www.geeksforgeeks.org/find-position-of-the-only-set-bit/
+
+answer: FindOnePos.java
 
 *********************************************************************
 Q4. Given a linked list, reverse alternate nodes and append them to end of list. Extra allowed space is O(1) 
@@ -38,6 +42,8 @@ Input List:  12->14->16->18->20
 Output List: 12->16->20->18->14
 
 reference: http://www.geeksforgeeks.org/given-linked-list-reverse-alternate-nodes-append-end/
+
+
 
 *******************************************************************
 Q5. Given two rectangles, find if the given two rectangles overlap or not.
