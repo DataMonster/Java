@@ -24,7 +24,7 @@ reference:  http://www.geeksforgeeks.org/merge-k-sorted-arrays/
 answer: MergeKSorted.java
 
 *******************************************************************
-Q3. Given a number having only one ¡¯1¡ä and all other ¡¯0¡äs in its binary representation, find position of the only set bit. 
+Q3. Given a number having only one ï¿½ï¿½1ï¿½ï¿½ and all other ï¿½ï¿½0ï¿½ï¿½s in its binary representation, find position of the only set bit. 
 Source: Microsoft Interview | 18
 
 reference: http://www.geeksforgeeks.org/find-position-of-the-only-set-bit/
@@ -77,6 +77,8 @@ Input: acaaabbbacdddd
 Output: acac
 
 reference: http://www.geeksforgeeks.org/recursively-remove-adjacent-duplicates-given-string/
+
+answer: RemoveDuplicates.java
 
 ******************************************************************
 
