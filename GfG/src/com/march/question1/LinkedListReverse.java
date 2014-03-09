@@ -13,7 +13,7 @@ Output List: 1->3->5->6->4->2
 Input List:  12->14->16->18->20
 Output List: 12->16->20->18->14
  */
-
+//print out is not correct
 public class LinkedListReverse {
 	
 	public static void reve(LinkedList<String> list){
