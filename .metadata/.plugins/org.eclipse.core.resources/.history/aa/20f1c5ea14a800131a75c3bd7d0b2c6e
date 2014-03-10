@@ -55,7 +55,6 @@ l2: Top Left coordinate of second rectangle.
 r2: Bottom Right coordinate of second rectangle.
 
 We need to write a function bool doOverlap(l1, r1, l2, r2) that returns true if the two given rectangles overlap.
-
 reference: http://www.geeksforgeeks.org/find-two-rectangles-overlap/
 
 *******************************************************************
@@ -108,3 +107,6 @@ For every node, length of the longest leaf to node path has not more than twice 
 Expected time complexity is O(n). The tree should be traversed at-most once in the solution.
 
 reference: http://www.geeksforgeeks.org/check-given-binary-tree-follows-height-property-red-black-tree/
+
+******************************************************************
+Q8. read http://www.geeksforgeeks.org/interesting-shortest-path-questions-set-1/

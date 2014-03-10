@@ -1,4 +1,4 @@
-package com.march.question1;
+package edu.java;
 /*
  * Q6. Given a string, recursively remove adjacent duplicate characters from string. The output string should not have any adjacent duplicates. See following examples.
 
