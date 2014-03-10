@@ -83,7 +83,7 @@ answer: RemoveDuplicates.java
 
 ******************************************************************
 
-Q7. In a Red-Black Tree, the maximum height of a node is at most twice the minimum height (The four Red-Black tree properties make sure this is always followed). Given a Binary Search Tree, we need to check for following property.
+?Q7. In a Red-Black Tree, the maximum height of a node is at most twice the minimum height (The four Red-Black tree properties make sure this is always followed). Given a Binary Search Tree, we need to check for following property.
 For every node, length of the longest leaf to node path has not more than twice the nodes on shortest path from node to leaf.
 
     12                                        40
