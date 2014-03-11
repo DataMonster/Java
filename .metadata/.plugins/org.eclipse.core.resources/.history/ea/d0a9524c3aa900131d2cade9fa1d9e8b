@@ -14,14 +14,9 @@ otherwise prints NONE as follows:
  */
 
 public class MajorityElement {
-	
-	public static void Choose(Object[] arr){
-		
-		
-	}
 
 	public static void main(String[] args) {
-		
+
 	}
 
 }
