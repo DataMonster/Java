@@ -20,7 +20,7 @@ public class ArraySum {
 		for(int i = 0;i<arr.length-1;i++){
 			for(int j = i+1; j<arr.length;j++){
 				result[k] = arr[i]+arr[j];
-				//System.out.println(k+" "+result[k]+" "+arr[i]+" "+arr[j]);
+				System.out.println(k+" "+result[k]+" "+arr[i]+" "+arr[j]);
 				if(x == result[k]) {
 					return true;
 				}
