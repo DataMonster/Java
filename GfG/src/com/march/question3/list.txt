@@ -1,17 +1,19 @@
 In this package, the following questions will be coded in. modified date: 03/11/14
 
 **************************************************************************
-Q1. Majority Element: A majority element in an array A[] of size n is an element that appears more than n/2 times (and hence there is at most one such element).
+Q1. Majority Element: A majority element in an array A[] of size n is an element
+ that appears more than n/2 times (and hence there is at most one such element).
 
-Write a function which takes an array and emits the majority element (if it exists), otherwise prints NONE as follows:
-
+Write a function which takes an array and emits the majority element (if it exists), 
+otherwise prints NONE as follows:
        I/P : 3 3 4 2 4 4 2 4 4
        O/P : 4 
 
        I/P : 3 3 4 2 4 4 2 4
        O/P : NONE
-
 reference: http://www.geeksforgeeks.org/majority-element/
+
+answer: 
 
 **************************************************************************
 reading:http://www.geeksforgeeks.org/what-is-memory-leak-how-can-we-avoid/
