@@ -34,9 +34,6 @@ Q3.Write a GetNth() function that takes a linked list and an integer index and r
 data value stored in the node at that index position.
 
 REFERENCE: http://www.geeksforgeeks.org/write-a-function-to-get-nth-node-in-a-linked-list/
-
-answer: GetNode.java 
-
 ************************************************************************
 READING: http://www.geeksforgeeks.org/lets-experiment-with-networking/
 *************************************************************************
