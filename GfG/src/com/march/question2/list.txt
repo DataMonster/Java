@@ -44,6 +44,8 @@ Q4.Write a C program to reverse digits of a number
 
 REFERENCE:http://www.geeksforgeeks.org/write-a-c-program-to-reverse-digits-of-a-number/
 
+answer: ReverseDigit.java
+
 *************************************************************************
 READING: http://www.geeksforgeeks.org/what-is-memory-leak-how-can-we-avoid/
 *************************************************************************
