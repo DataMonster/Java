@@ -16,7 +16,7 @@ import java.util.Set;
 public class MaxOccurr {
 
 	public static void main(String[] args) {
-		String ex = "ttthis is sttring hahahaha";
+		String ex = "this is sttring hahahaha";
 		HashMap<Character, Integer> hm = new HashMap<Character, Integer>();
 		for(int i =0;i<ex.length();i++){
 			if(hm.get(ex.charAt(i))!=null){
@@ -44,7 +44,6 @@ public class MaxOccurr {
 		while(it2.hasNext()){
 			System.out.println(it2.next());
 		}
-		System.out.println(hm.toString());
 	}
 
 }

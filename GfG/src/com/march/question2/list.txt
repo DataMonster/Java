@@ -54,6 +54,8 @@ Q5.Write an efficient C function to return maximum occurring character in the in
 
 REFERENCE: http://www.geeksforgeeks.org/return-maximum-occurring-character-in-the-input-string/
 
+answer: MaxOccurr.java
+
 *************************************************************************
 READING: http://www.geeksforgeeks.org/618/
 *************************************************************************
