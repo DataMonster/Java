@@ -49,8 +49,8 @@ answer: ReverseDigit.java
 *************************************************************************
 READING: http://www.geeksforgeeks.org/what-is-memory-leak-how-can-we-avoid/
 *************************************************************************
-Q5.Write an efficient C function to return maximum occurring character in the input string
- e.g., if input string is ¡°test string¡± then function should return ¡®t¡¯.
+Q5.Write an efficient C function to return maximum occurring character in the input string e.g.,
+ if input string is ¡°test string¡± then function should return ¡®t¡¯.
 
 REFERENCE: http://www.geeksforgeeks.org/return-maximum-occurring-character-in-the-input-string/
 
