@@ -13,7 +13,7 @@ otherwise prints NONE as follows:
        O/P : NONE
 reference: http://www.geeksforgeeks.org/majority-element/
 
-answer: MajorityElement.java
+answer: 
 
 **************************************************************************
 reading:http://www.geeksforgeeks.org/what-is-memory-leak-how-can-we-avoid/
