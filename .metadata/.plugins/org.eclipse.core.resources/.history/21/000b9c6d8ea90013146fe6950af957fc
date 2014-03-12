@@ -50,21 +50,18 @@ answer: DeleteSingle.java
 **************************************************************************
 reading: http://www.geeksforgeeks.org/understanding-register-keyword/
 **************************************************************************
-Q4. Power Set. Power set P(S) of a set S is the set of all subsets of S. For example 
+Q4. Power Set Power set P(S) of a set S is the set of all subsets of S. For example 
 S = {a, b, c} then P(s) = {{}, {a}, {b}, {c}, {a,b}, {a, c}, {b, c}, {a, b, c}}.
-If S has n elements in it then P(s) will have 2^n elements.
+If S has n elements in it then P(s) will have 2^n elements
 
 reference: http://www.geeksforgeeks.org/power-set/
 
-answer: PowerSet.java
+answer: 
 
 **************************************************************************
 reading: http://www.geeksforgeeks.org/storage-for-strings-in-c/
 **************************************************************************
 Q5. Below are the different methods to remove duplicates in a string.
-
-answer: RemoveDuplicate.java
-
 reference: http://www.geeksforgeeks.org/remove-all-duplicates-from-the-input-string/
 **************************************************************************
 reading: http://www.geeksforgeeks.org/swap-strings-in-c/
