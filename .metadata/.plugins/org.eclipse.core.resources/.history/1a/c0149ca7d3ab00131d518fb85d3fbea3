@@ -1,0 +1,34 @@
+package edu.java.chap1;
+
+/*
+ * input = "mr john smith    "
+ * output = "mr%20john%20smith"
+ */
+public class ReplaceSpace {
+
+	public static void replace(String str){
+		char[] ch = str.toCharArray();
+		int j = 0;
+		for(int i = 0; i<str.length();i++){
+			if(str.charAt(i)==' '){
+				ch[i++] = '%';
+				ch[i++] = '2';
+				ch[i] = '0';
+				j++;
+			}
+			else{
+				ch[i] = str.charAt(j);
+				j++;
+			}
+		}
+		
+		String result = new String(ch);
+		System.out.println(result);
+	}
+	
+	public static void main(String[] args) {
+		String input =  "mr john smith    ";
+		replace(input);
+	}
+
+}
