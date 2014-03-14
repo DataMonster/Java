@@ -1,0 +1,17 @@
+
+public class Rawdata {
+
+	public static void BJU(int[][] arr){
+		int sep = arr[1][4]+arr[4][1]+arr[1][5]+arr[5][1]+arr[4][5]+arr[5][4];
+		System.out.println(sep);
+	}
+	
+	public static void main(String[] args) {
+		int[][] arr = {{0,966,72,39,187,1177},{966,0,896,1426,1116,4323},{72,897,0,249,86,0},
+				{39,1565,249,0,97,1583},{187,913,86,97,0,1522},{1177,3999,0,1583,2019}};
+		BJU(arr);
+		
+	}
+
+}
+

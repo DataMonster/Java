@@ -1,0 +1,59 @@
+
+public class Rawdata {
+
+	public static void BJU(int[][] arr){
+		int separate = arr[1][4]+arr[4][1]+arr[1][5]+arr[5][1]+arr[4][5]+arr[5][4];
+		System.out.println(separate);
+		//int coalition = 
+	}
+	
+	public static void ABJU(int[][] arr){
+		int separate = arr[0][1]+arr[1][0]+arr[0][4]+arr[4][0]+arr[0][5]+arr[5][0]+arr[1][4]+arr[4][1]+arr[1][5]+arr[5][1]+arr[4][5]+arr[5][4];
+		System.out.println(separate);
+		int coalition = 13570;
+		System.out.println(coalition);
+		int method1 = 1112*3+1649;
+		System.out.println(method1);
+		int shapley = 758+1678+943+1603;
+		System.out.println(shapley);
+	}
+	
+	public static void ABFJU(int[][] arr){
+		int separate = 24990;
+		int coalition = 19188;
+		int V = separate - coalition;
+		System.out.println(V);
+		int method1 = 1877+579+409*2+2528;
+		System.out.println(method1);
+		int shapley = 826+1479+415+1076+2003;
+		System.out.println(shapley); 
+		
+	}
+	
+	public static int getSep(int[][] arr, int[] combine){
+		int result = 0;
+		for(int i = 0;i<combine.length-1;i++){
+			for (int j = i+1;j<combine.length;j++){
+				result = result+arr[combine[i]][combine[j]];
+				result = result+arr[combine[j]][combine[i]];
+			}
+		}
+		
+	return result;
+	}
+	
+	public static void main(String[] args) {
+		int[][] arr = {{0,966,72,39,187,1177},{966,0,896,1426,1116,4323},{72,897,0,249,86,0},
+				{39,1565,249,0,97,1583},{187,913,86,97,0,1522},{1177,3999,0,1583,2019}};
+		BJU(arr);
+		int[] combine = {1,4,5};
+		System.out.println(getSep(arr,combine));
+		ABJU(arr);
+		int[] combine2= {0,1,4,5};
+		System.out.println(getSep(arr,combine2));
+		
+		//ABFJU(arr);
+	}
+
+}
+
