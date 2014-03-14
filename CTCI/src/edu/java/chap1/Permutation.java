@@ -1,0 +1,16 @@
+package edu.java.chap1;
+
+//Given two Strings, write a method to decide if one is a permutation of the other. 
+
+//this is really similar to UniqueChar.java
+public class Permutation {
+ 
+	public static void main(String[] args) {
+		//convert char array to string.
+		char[] ch = {'a','b'};
+		String str = new String(ch);
+		System.out.println(ch.toString());
+		System.out.println(str);
+	}
+
+}
