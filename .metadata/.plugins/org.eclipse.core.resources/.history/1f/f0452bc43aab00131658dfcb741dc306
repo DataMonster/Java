@@ -15,7 +15,7 @@ import java.util.Arrays;
 public class UniqueChar {
 	
 	//Time complex: O(N^2); Space complex: O(1)
-	public static boolean unique1(String str){
+	public static boolean unique(String str){
 		//if(str.length()>256) return false;
 		
 		for(int i = 0; i<str.length()-1;i++){
@@ -29,7 +29,7 @@ public class UniqueChar {
 		return true;
 	}
 	
-	//Time complex: O(N); Space complex: O(N)
+	
 	public static boolean unique2(String str){
 		//if(str.length()>256) return false;
 		char[] ch = new char[str.length()];
@@ -83,10 +83,10 @@ public class UniqueChar {
 	
 	public static void main(String[] args) {
 		String str = "sdfghza";
-		System.out.println(unique1(str));
-		System.out.println(unique2(str));
+		System.out.println(unique(str));
 		System.out.println(unique3(str));
 		System.out.println(unique4(str));
+
 	}
 
 }

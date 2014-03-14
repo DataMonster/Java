@@ -82,7 +82,7 @@ public class UniqueChar {
 	}
 	
 	public static void main(String[] args) {
-		String str = "sdfghza";
+		String str = "asdfghza";
 		System.out.println(unique1(str));
 		System.out.println(unique2(str));
 		System.out.println(unique3(str));

@@ -1,0 +1,45 @@
+package edu.java.chap1;
+
+/*
+ * Implement an algorithm to determine if a string has all unique characters. What if you cannot use additional data structure?
+ */
+public class UniqueChar {
+	
+	//Time complex: Space complex
+	public static boolean unique(String str){
+		for(int i = 0; i<str.length()-1;i++){
+			for(int j = i+1; j<str.length();j++){
+				if (str.charAt(i)==str.charAt(j)){
+					return false;
+				}
+			}
+		}
+		return true;
+	}
+	
+	//
+	public static boolean unique2(String str){
+		boolean[] dec = new boolean[256];
+				//System.out.println(dec[0]);
+		int pos;
+		int add = 0;
+		for (int i = 0; i<str.length(); i++){
+			pos = (int)str.charAt(i);
+			if(dec[pos]==false){
+				dec[pos] = true;
+				add++;
+			}
+		}
+		if(add<str.length()){
+			return false;
+		}
+		return true;
+	}
+	
+	public static void main(String[] args) {
+		String str = "asdfghza";
+		System.out.println(unique(str));
+		System.out.println(unique2(str));
+	}
+
+}
