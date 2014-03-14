@@ -1,9 +1,0 @@
-In this package, the following questions will be coded in. modified date: 03/06/14
-
-
-Q1. you have a array A{a,b,c,d,e,f...z, aa,ab...az, ba,bb...bz,...,aaa..a,aaa...b,
-...,aaa...z}, give a input number num, output A[num-1].
-
-PrintRecursive.java
-
-Q2. 
