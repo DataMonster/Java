@@ -20,7 +20,7 @@ public class ReverseString {
 	public static void main(String[] args) {
 		char[] ch = {'a','b'};
 		System.out.println(Arrays.toString(ch));
-		Stack<Character> st = new Stack<Character>();
+		Stack<Character> st = new Stack();
 		st.push('a');
 		st.push('b');
 		System.out.println(st.toString());
