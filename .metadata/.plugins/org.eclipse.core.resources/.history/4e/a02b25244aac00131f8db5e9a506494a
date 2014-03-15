@@ -1,0 +1,21 @@
+package edu.java.chap1;
+
+/*
+ * simple string compress 
+ * input: aaabbbccc
+ * output:a3b3c3
+ * if output is longer than input, then return input instead.
+ */
+public class StringCompress {
+	
+	public static void Stringbuffer(){
+		StringBuffer sb = new StringBuffer();
+		sb.append(1);
+		System.out.println(sb.toString());
+	}
+
+	public static void main(String[] args) {
+
+	}
+
+}
