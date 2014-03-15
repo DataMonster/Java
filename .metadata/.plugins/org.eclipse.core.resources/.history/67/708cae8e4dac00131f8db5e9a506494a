@@ -48,7 +48,7 @@ public class StringCompress {
 	
 	public static void main(String[] args) {
 		String str = "aaabbbcccddd";
-		//String str2 = "abcdefg";
+		String str2 = "abcdefg";
 		compress1(str);
 	}
 
