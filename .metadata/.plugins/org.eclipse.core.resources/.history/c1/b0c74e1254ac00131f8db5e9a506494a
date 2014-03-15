@@ -4,7 +4,6 @@ package edu.java.chap1;
 public class MarixRotate {
 	
 	public static void matrixPrint(int[][] matrix){
-		System.out.println();
 		for(int i =0; i < matrix.length;i++){
 			for(int j = 0; j <matrix[0].length;j++){
 				System.out.print(matrix[i][j]+" ");
@@ -14,11 +13,21 @@ public class MarixRotate {
 	}
 	
 	public static int[][] rightrotate(int[][] matrix){
-		return up(T(matrix));
+		int[][] result = new int[matrix.length][matrix.length];
+		
+		for(int i = 0; i<matrix.length; i++){
+			for(int j = 0; j <matrix.length; j++){
+				result[i][j] = matrix[matrix.length-j-1][i];
+			}
+		}
+		
+		return result;
 	}
 	
 	public static int[][] leftrotate(int[][] matrix){
-		return left(T(matrix));
+		int[][] result = new int[matrix.length][matrix.length];
+		
+		return result;
 	}
 	
 	public static int[][] T(int[][] matrix){
@@ -47,7 +56,7 @@ public class MarixRotate {
 		}
 		return result;
 	}
-	public static int[][] up(int[][] matrix){
+	public static int[][] right(int[][] matrix){
 		int[][] result = new int[matrix.length][matrix.length];
 		for(int i = 0; i<matrix.length; i++){
 				result[i] = matrix[matrix.length-1-i];
@@ -56,8 +65,11 @@ public class MarixRotate {
 	}
 	public static void main(String[] args) {
 		int[][] matrix = {{1,2,3,4},{5,6,7,8},{9,10,11,12},{13,14,15,16}};
-		matrixPrint(rightrotate(matrix));
-		matrixPrint(leftrotate(matrix));
+		matrixPrint(matrix);
+		matrixPrint(right(matrix));
+		
+		
+
 	}
 
 }
