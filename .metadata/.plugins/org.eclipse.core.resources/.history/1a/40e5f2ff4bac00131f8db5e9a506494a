@@ -14,7 +14,7 @@ public class StringCompress {
 		System.out.println(sb.toString());
 	}
 
-	//time complex: O(n), space complex: O(n)
+	//time complex: O(n), space complex: O(1)
 	public static void compress1(String str){
 		if(str.length() == 0) {
 			System.out.println("please enter a string longer than 0 length");
@@ -35,9 +35,6 @@ public class StringCompress {
 				num = 1;
 			}
 		}
-		
-		sb.append(pos);
-		sb.append(num);
 		String result = sb.toString();
 		if(result.length()>str.length()){
 			System.out.println(str);
@@ -48,8 +45,8 @@ public class StringCompress {
 	
 	public static void main(String[] args) {
 		String str = "aaabbbcccddd";
-		String str2 = "abcdefg";
-		compress1(str);
+		String str2 = "";
+		compress1(str2);
 	}
 
 }

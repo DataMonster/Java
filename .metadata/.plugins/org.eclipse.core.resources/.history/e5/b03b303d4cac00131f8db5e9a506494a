@@ -35,9 +35,6 @@ public class StringCompress {
 				num = 1;
 			}
 		}
-		
-		sb.append(pos);
-		sb.append(num);
 		String result = sb.toString();
 		if(result.length()>str.length()){
 			System.out.println(str);
