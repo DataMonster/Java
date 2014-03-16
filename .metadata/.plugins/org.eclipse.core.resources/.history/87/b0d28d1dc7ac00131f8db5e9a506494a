@@ -1,0 +1,36 @@
+package edu.java.chap2;
+
+import java.util.LinkedList;
+
+import java.util.Iterator;
+
+//implement an algorithm to find the kth to last element of a singly linked list
+public class KthLast {
+
+	public static Object check1(LinkedList<Object> list, int times){
+		Object result = null;
+		Iterator it = list.iterator();
+		for(int i = 0; i<times; i++){
+			result = it.next();
+		}
+		
+		return result;
+	}
+	
+	public static Object check2(LinkedList<Object> list, int times){
+		
+		return null;
+	}
+	
+	public static void main(String[] args) {
+		LinkedList<Object> list = new LinkedList<Object>();
+		list.add("1");
+		list.add("2");
+		list.add("3");
+		list.add("4");
+		list.add("5");
+		
+		System.out.println(check1(list,3));
+	}
+
+}

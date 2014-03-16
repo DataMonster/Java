@@ -1,0 +1,9 @@
+package edu.java.chap2;
+
+public class KthLast {
+
+	public static void main(String[] args) {
+
+	}
+
+}
