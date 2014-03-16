@@ -1,0 +1,18 @@
+package edu.java.chap2;
+
+/*
+ * input : 7->1->6 + 5->9->2 so 617+295 = 912
+ * output: 2->1->9
+ * 
+ * input : 6->1->7 + 2->9->5
+ * output: 9->1->2
+ * 
+ */
+public class AddDigit {
+
+
+	public static void main(String[] args) {
+
+	}
+
+}

@@ -14,13 +14,8 @@ import java.util.LinkedList;
 public class AddDigit {
 
 	public static void backadd(LinkedList<Integer> list1, LinkedList<Integer> list2){
-		int result = back2int(list1)+back2int(list2);
-		System.out.println(result);
-	}
-	
-	public static void frontadd(LinkedList<Integer> list1, LinkedList<Integer> list2){
-		int result = front2int(list1)+front2int(list2);
-		System.out.println(result);
+		
+		
 	}
 	
 	public static int front2int(LinkedList<Integer> list){
@@ -55,12 +50,6 @@ public class AddDigit {
 		list2.add(2);
 		
 		System.out.println(front2int(list1));
-		System.out.println(front2int(list2));
-		System.out.println(back2int(list1));
-		System.out.println(front2int(list2));
-		
-		backadd(list1,list2);
-		frontadd(list1,list2);
 	}
 
 }

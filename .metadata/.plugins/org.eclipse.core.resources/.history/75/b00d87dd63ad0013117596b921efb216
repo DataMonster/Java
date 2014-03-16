@@ -55,12 +55,9 @@ public class AddDigit {
 		list2.add(2);
 		
 		System.out.println(front2int(list1));
-		System.out.println(front2int(list2));
 		System.out.println(back2int(list1));
-		System.out.println(front2int(list2));
 		
 		backadd(list1,list2);
-		frontadd(list1,list2);
 	}
 
 }
