@@ -1,0 +1,31 @@
+package edu.java.chap2;
+
+import java.util.LinkedList;
+
+/* 
+ * really similar to : detect if a linked list has a loop.
+ * input: a->b->c->d->e->c
+ * output: c
+ * 
+ */
+
+public class CircleList {
+	
+	public static boolean check(LinkedList<Character> list){
+		char first = list.get(0);
+		char second = list.get(0);
+		
+		while(first != second){
+			
+		}
+		return true ;
+	}
+	
+	public static void main(String[] args) {
+		char a;
+		char b;
+		
+		System.out.println(a==b);
+	}
+
+}

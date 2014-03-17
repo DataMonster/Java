@@ -1,0 +1,16 @@
+package edu.java.chap2;
+
+/* 
+ * really similar to : detect if a linked list has a loop.
+ * input: a->b->c->d->e->c
+ * output: c
+ * 
+ */
+
+public class CircleList {
+
+	public static void main(String[] args) {
+
+	}
+
+}
