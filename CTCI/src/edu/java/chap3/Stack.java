@@ -1,7 +1,7 @@
 //this is a simple stack class.
 class Stack{
     Node top;
-    Node pop(){
+    Object pop(){
         if(top!=null){
               Object item = top.data;
               top = top.next;
