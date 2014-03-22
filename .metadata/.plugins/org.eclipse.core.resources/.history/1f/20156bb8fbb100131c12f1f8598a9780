@@ -29,13 +29,11 @@ public class SwapNumber {
 	
 	public static void main(String[] args) {
 		x = 25;
-		y = 5;
+		y = 16;
 		System.out.println("x: "+x+" y: "+y);
 		swap();
 		System.out.println("x: "+x+" y: "+y);
 		swap2();
-		System.out.println("x: "+x+" y: "+y);
-		swap3();
 		System.out.println("x: "+x+" y: "+y);
 	}
 
