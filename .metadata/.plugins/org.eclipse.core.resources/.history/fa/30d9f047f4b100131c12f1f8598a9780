@@ -1,6 +1,7 @@
 package edu.java.chap4;
 
 import java.util.LinkedList;
+import java.util.List;
 
 //given a directed graph, design an algorithm to find out whether there is a route between two nodes.
 /*
@@ -9,15 +10,12 @@ import java.util.LinkedList;
 public class DirectPath {
 	
 	public static boolean CheckReach(int from, int to, int[][] vertice){
-		if(from == to) return true;
-		
 		LinkedList<Integer> list = new LinkedList<Integer> ();
 		list.add(from);
 		int pos = 0;
 		while(list.size()>pos){
-			from = list.get(pos);
 			for(int i = 0; i<vertice.length;i++){
-				if(vertice[i][0] == from &&!check(list,vertice[i][1])){
+				if(vertice[i][0] == from ||!check(list,from)){
 					list.add(vertice[i][1]);
 				}
 			}
@@ -25,6 +23,7 @@ public class DirectPath {
 				return true;
 			}
 			pos++;
+			from = list.get(pos);
 		}
 		return false;
 	}
@@ -40,17 +39,14 @@ public class DirectPath {
 	
 	public static void main(String[] args) {
 		// build graph
-		/*Node n1 = new Node(1);
+		Node n1 = new Node(1);
 		Node n2 = new Node(3);
 		Node n3 = new Node(7);
 		Node n4 = new Node(4);
 		Node n5 = new Node(9);
-		*/
 		
-		int[][] vertice = {{1,2},{2,1},{1,5},{3,2},{2,4},{5,4}};
-		for(int i = 1; i<6;i++){
-			System.out.println(CheckReach(1,i,vertice));
-		}
+		int[][] vertice = {{1,2},{2,1},{1,5},{2,3},{2,4},{5,4}};
+		
 		//check reach
 	}
 
