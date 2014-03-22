@@ -5,11 +5,7 @@ package edu.java.chap4;
  */
 public class DirectPath {
 	
-	public static boolean CheckReach(int from, int to, int[][] vertice){
-		
-		
-		return false;
-	}
+	public static boolean CheckReach()
 	
 	public static void main(String[] args) {
 		// build graph
