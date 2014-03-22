@@ -32,7 +32,7 @@ public class SmallLarge {
 	}
 	
 	public static int NextSmall(int input){
-		int result = input-1;
+		int result = input-11;
 		int ones = CountOnes(input);
 		while(result >= 0){
 			if(CountOnes(result) == ones){

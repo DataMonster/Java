@@ -32,7 +32,7 @@ public class SmallLarge {
 	}
 	
 	public static int NextSmall(int input){
-		int result = input-1;
+		int result = input-11;
 		int ones = CountOnes(input);
 		while(result >= 0){
 			if(CountOnes(result) == ones){
@@ -45,8 +45,8 @@ public class SmallLarge {
 	}
 	
 	public static void main(String[] args) {
-		System.out.println(NextLarge(22));
-		System.out.println(NextSmall(22));
+		System.out.println(NextLarge(3));
+		System.out.println(NextSmall(3));
 	}
 
 }
