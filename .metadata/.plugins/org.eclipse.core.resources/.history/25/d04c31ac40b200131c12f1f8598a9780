@@ -1,0 +1,14 @@
+package edu.java.chap4;
+
+/*
+ * Given a sorted (increasing order) array, write a algorithm to create a binary search tree with
+ *  minimal height.
+ */
+
+public class MinBST {
+
+	public static void main(String[] args) {
+
+	}
+
+}

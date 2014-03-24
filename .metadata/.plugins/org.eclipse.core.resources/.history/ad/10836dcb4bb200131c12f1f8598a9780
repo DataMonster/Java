@@ -1,0 +1,53 @@
+package edu.java.chap4;
+
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
+/*
+ * Given a sorted (increasing order) array, write a algorithm to create a binary search tree with
+ *  minimal height.
+ */
+
+public class MinBST {
+
+	public static node find(int[] arr){
+		int pos = arr.length/2-1;
+		node n = new node(arr[pos]);
+		
+		int[] arr1 = Arrays.copyOfRange(arr, 0, pos);
+		int[] arr2 = Arrays.copyOfRange(arr, pos+1, arr.length);
+		if(arr1.length == 1){
+			return new node(arr1[0]);
+		} else {
+			n.left = find(arr1);
+		}
+		if(arr2.length == 1){
+			return new node(arr2[0]);
+		} else {
+			n.right = find(arr2);
+		}
+		return n;
+	}
+	
+	public static void main(String[] args) {
+		int[] arr = {1,2,3,4,5,6,7,8,9,10};
+		int[] arr1= Arrays.copyOfRange(arr, 0, 4);
+		System.out.println(arr1[3]);
+		
+		node n = find(arr);
+		System.out.println(n.data);
+		System.out.println(n.left.data);
+		System.out.println(n.left.left.data);
+	}
+
+}
+
+class node{
+	int data;
+	node left;
+	node right;
+	
+	node(int data){
+		this.data = data;
+	}
+}

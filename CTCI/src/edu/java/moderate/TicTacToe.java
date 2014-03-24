@@ -1,6 +1,6 @@
 package edu.java.moderate;
 
-//Design an algorithm to figure out if someone has wo a game of tic-tac-toe.
+//Design an algorithm to figure out if someone has won a game of tic-tac-toe.
 
 public class TicTacToe {
 

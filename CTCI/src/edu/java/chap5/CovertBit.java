@@ -25,6 +25,7 @@ public class CovertBit {
 		int x = 31;
 		int y = 14;
 		System.out.println(Count(x^y));
+		System.out.println(Integer.toBinaryString(~0));
 	}
 
 }

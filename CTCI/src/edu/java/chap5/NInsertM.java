@@ -24,7 +24,8 @@ public class NInsertM {
 			return 0;
 		}
 		
-		int last = input&3;
+		int save = (int)Math.pow(2, i)-1;
+		int last = input&save;
 		System.out.println(Integer.toBinaryString(last));
 		input = input>>(i+j-1);
 		System.out.println(Integer.toBinaryString(input));
@@ -47,10 +48,10 @@ public class NInsertM {
 		int x2 = Integer.valueOf(st, 2);
 		System.out.println(x2);
 		*/
-		int input = Integer.valueOf("1000001101", 2);
+		int input = Integer.valueOf("10000000000", 2);
 		int m = Integer.valueOf("10011", 2);
 		
-		System.out.println(Integer.toBinaryString(insert(input,m,2,6)));
+		System.out.println(Integer.toBinaryString(insert(input,m,3,7)));
 		
 	}
 

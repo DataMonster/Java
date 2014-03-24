@@ -4,9 +4,12 @@ import java.util.LinkedList;
 
 //given a directed graph, design an algorithm to find out whether there is a route between two nodes.
 /*
- * directed graph: 
  */
 public class DirectPath {
+	
+	//public static void DFS(Node root){
+		
+	//}
 	
 	public static boolean CheckReach(int from, int to, int[][] vertice){
 		if(from == to) return true;
@@ -56,6 +59,7 @@ public class DirectPath {
 
 }
 
+/*
 class Node{
 	Object data;
 	Node to = null;
@@ -63,4 +67,4 @@ class Node{
 	Node(Object data){
 		this.data = data;
 	}
-}
+}*/
