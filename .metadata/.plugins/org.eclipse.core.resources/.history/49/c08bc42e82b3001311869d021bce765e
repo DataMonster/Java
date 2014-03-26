@@ -1,0 +1,20 @@
+package edu.java.chap4;
+
+public class TreeNode {
+
+	int data;
+	node left = null;
+	node right = null;
+	
+	TreeNode(int data){
+		this.data = data;
+	}
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

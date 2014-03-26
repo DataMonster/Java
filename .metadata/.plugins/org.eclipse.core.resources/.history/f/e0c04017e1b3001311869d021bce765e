@@ -1,0 +1,57 @@
+package edu.java.chap11;
+
+public class Sorting {
+
+	public static void mergesort(int[] arr, int start, int end){
+		if(start < end){
+			mergesort(arr, start, (start+end)/2);
+			mergesort(arr,(start+end)/2+1,end);
+			merge(arr, start,end);
+		}
+	}
+	
+	public static void merge(int[] arr, int start, int end){
+		int[] temp = new int[arr.length];
+		int i = start;
+		int j = (end+start)/2+1;
+		int k = 0;
+		while(i<(end+start)/2+1){
+			if(arr[i]<arr[j]){
+				temp[k]=arr[i];
+				i++;
+				k++;
+			}
+			else{
+				temp[k] = arr[j];
+				j++;
+				k++;
+			}
+		}
+		if(k==end-start+1) temp[k]=arr[k+start];
+		if(k<(end-start+1)){
+			for(i = k; i<end-start+1;i++){
+				temp[i] = arr[i+start];
+			}
+		}
+		for(i=start;i<end+1;i++){
+			arr[i] = temp[i-start];
+		}
+	}
+	
+	public static void swap(int i, int j){
+		i = i+j;
+		j = i-j;
+		i = i-j;
+	}
+	
+	public static void main(String[] args) {
+		// this contains three main sorting algorithm: mergesort, quicksort and binarysot.
+		//start with the input arry
+		int[] arr1 = {3,2,1,5,6,7,9,0,12,42,8}; //arr1 has no duplicate numbers
+		int[] arr2 = {3,2,1,5,6,2,3,6,6,13,4};
+		mergesort(arr1,0,10);
+		System.out.println(arr1[0]);
+
+	}
+
+}

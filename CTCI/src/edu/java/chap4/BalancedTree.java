@@ -20,8 +20,4 @@ public class BalancedTree {
 	}
 }
 
-class TreeNode {
-	TreeNode root = null;
-	TreeNode right = null;
-	TreeNode left = null;
-}
+
