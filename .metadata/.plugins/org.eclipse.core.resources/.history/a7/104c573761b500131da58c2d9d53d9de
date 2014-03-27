@@ -10,7 +10,6 @@ public class NextNode {
 		if (n == null) return null;
 		
 		//if(n.parent == null || n.right != null)
-		return null;
 	}
 	
 	public static void main(String[] args) {
