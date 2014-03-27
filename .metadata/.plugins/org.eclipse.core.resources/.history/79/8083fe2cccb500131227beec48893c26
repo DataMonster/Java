@@ -1,0 +1,54 @@
+package edu.java.chap4;
+
+import java.util.LinkedList;
+
+/*
+ * Design an algorithm and write code to find the first common ancestor of two nodes in
+ *  a binary tree. Avoid storing additional nodes in a data structure. Note: this is
+ *  not necessarily a binary search tree.
+ */
+
+public class FirstAncester {
+		
+	public static TreeNode first(TreeNode root, TreeNode node1, TreeNode node2){
+		
+		return null;
+	}
+	
+	public static void getRoute(TreeNode root, TreeNode node){
+		LinkedList<TreeNode> list = new LinkedList<TreeNode> ();
+		getNode(list,root,node);
+		for(int i = 0;i<list.size();i++){
+			System.out.print(list.get(i).data+" ");
+		}
+	}
+
+	public static void getNode(LinkedList<TreeNode> list, TreeNode root, TreeNode node){
+		if(root.left == node||root.right==node){
+			list.add(root);
+			return;
+		} else if(root.left!=null&&root.right !=null) {
+			list.add(root.left);
+			getNode(list,root.left,node);
+			//list.remove(root.left);
+			list.add(root.right);
+			getNode(list,root.right,node);
+			//list.remove(root.right);
+		}
+		//return;
+	}
+	public static void main(String[] args) {
+		TreeNode tn = new TreeNode(5);
+		tn.left = new TreeNode(3);
+		tn.left.left = new TreeNode(2);
+		tn.left.right = new TreeNode(4);
+		tn.left.left.left = new TreeNode(1);
+		tn.right = new TreeNode(8);
+		tn.right.left = new TreeNode(6);
+		tn.right.right = new TreeNode(9);
+		tn.right.right.right = new TreeNode(11);
+		
+		getRoute(tn,tn.right.right.right);
+	}
+	
+}

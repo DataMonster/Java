@@ -1,0 +1,30 @@
+package edu.java.chap4;
+
+import java.util.LinkedList;
+
+/*
+ * Design an algorithm and write code to find the first common ancestor of two nodes in
+ *  a binary tree. Avoid storing additional nodes in a data structure. Note: this is
+ *  not necessarily a binary search tree.
+ */
+
+public class FirstAncester {
+		
+	public static TreeNode first(TreeNode root, TreeNode node1, TreeNode node2){
+		
+		return null;
+	}
+	
+	public static LinkedList getroute(TreeNode root, TreeNode node){
+		LinkedList<TreeNode> list = new LinkedList<TreeNode> ();
+		
+		
+		
+		return null;
+	}
+
+	public static void main(String[] args) {
+		
+	}
+	
+}
