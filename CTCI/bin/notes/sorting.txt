@@ -1,0 +1,18 @@
+1. Merge sort:
+
+1.1. Cascade merge sort:
+Cascade merge sort is similar to the polyphase merge sort but uses a simpler distribution.
+The merge is slower than a polyphase merge when there are fewer than six files, but 
+faster when there are more than six.[1]
+
+1.2. Oscillating merge sort:
+
+
+
+1.3. Polyphase merge sort:
+A polyphase merge sort is an algorithm which decreases the number of runs at every 
+iteration of the main loop by merging runs into larger runs. It is used for external
+ sorting.
+ 
+1.4. Strand sort:
+
