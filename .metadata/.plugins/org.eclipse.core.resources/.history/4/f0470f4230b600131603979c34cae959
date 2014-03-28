@@ -1,0 +1,23 @@
+package edu.java.chap9;
+
+import java.util.Random;
+
+/*
+ * A child is running up with n steps, and can hop either 1 step, 2 steps, or 3 steps
+ * at a time, implement a method to count how many possible ways the child can run up 
+ * the stairs.
+ */
+
+public class StairCase {
+
+	
+	public static void main(String[] args) {
+		Random rd = new Random();
+		
+		System.out.println(Math.abs(rd.nextInt())%3+1);
+		System.out.println(Math.abs(rd.nextInt())%3+1);
+		System.out.println(Math.abs(rd.nextInt())%4);
+		System.out.println(Math.abs(rd.nextInt())%4);
+	}
+
+}
