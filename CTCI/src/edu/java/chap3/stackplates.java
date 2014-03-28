@@ -1,4 +1,6 @@
-package edu.java;
+package edu.java.chap3;
+
+//import java.util.Stack;
 
 /*
  * start a new stack when the previous stack exceeds some threshold
@@ -8,14 +10,12 @@ package edu.java;
  * single stack)
  * 
  */
+/*
 public class StackPlates {
 
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
-		stack st = new stack();
-		stack temp = new stack();
+		Stacks st = new Stacks();
+		Stacks temp = new Stacks();
 		temp.push(1);
 		st.push(temp);
 		
@@ -57,3 +57,4 @@ class Stacks{
     	}
     }
 }
+*/

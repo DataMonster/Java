@@ -1,19 +1,23 @@
+package edu.java.chap3;
+
+import edu.java.chap2.Node;
+
 //this is a simple queue class
 
 class Queue{
     Node first, last;
     void enqueue(Object item) {
-        if(!first) {
-            back = new Node(item);
-            first = back;
+        if(first!=null) {
+            last = new Node(item);
+            first = last;
         } else {
-            back.next = new Node(item);
-            back = back.next;
+            last.next = new Node(item);
+            last = last.next;
         }
     }
-    Node dequeue(Node n) {
+    Object dequeue(Node n) {
         if (first != null) {
-            Object item = first.data;
+            Object item = first.data2;
             first = first.next;
             return item;
         }

@@ -63,7 +63,7 @@ public class PartList {
 		
 		print(node);
 		Node result = part(node,5);
-		//print(result);
+		print(result);
 		System.out.print(node.data);
 		System.out.print(node.next.data);
 		System.out.print(node.next.next.data);

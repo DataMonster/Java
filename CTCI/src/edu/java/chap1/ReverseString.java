@@ -7,8 +7,9 @@ import java.util.Stack;
 public class ReverseString {
 
 	public static void reverse1(String str){
-		char temp = ' ';
-		char[] ch = new char[str.length()];
+		@SuppressWarnings("unused")
+		char temp;
+		//char[] ch = new char[str.length()];
 		
 		for(int i = 0; i<str.length()/2 ; i++){
 			temp = str.charAt(i);

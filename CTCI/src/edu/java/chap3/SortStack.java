@@ -1,4 +1,4 @@
-package edu.java;
+package edu.java.chap3;
 
 import java.util.Iterator;
 import java.util.Stack;
@@ -53,7 +53,7 @@ public class SortStack {
 		sorted(s,5);
 		}
 		
-		Iterator it = s.iterator();
+		Iterator<Integer> it = s.iterator();
 		System.out.println("\n"+s.size());
 		while(it.hasNext()){
 			System.out.print("?"+it.next());

@@ -1,4 +1,4 @@
-package edu.java;
+package edu.java.chap3;
 
 import java.util.Stack;
 

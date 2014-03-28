@@ -13,8 +13,8 @@ import java.util.LinkedList;
 public class CircleList {
 	
 	public static boolean check(LinkedList<Integer> list){
-		Iterator it1 = list.listIterator();
-		Iterator it2 = list.listIterator();
+		Iterator<Integer> it1 = list.listIterator();
+		Iterator<Integer> it2 = list.listIterator();
 		it2.next();
 		
 		while(it1!=it2){
@@ -32,8 +32,6 @@ public class CircleList {
 	}
 	
 	public static void main(String[] args) {
-		char a;
-		char b;
 		
 		LinkedList<Integer> list = new LinkedList<Integer>();
 		list.add(0);

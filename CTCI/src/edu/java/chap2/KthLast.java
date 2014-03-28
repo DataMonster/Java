@@ -9,7 +9,7 @@ public class KthLast {
 
 	public static Object check1(LinkedList<Object> list, int times){
 		Object result = null;
-		Iterator it = list.iterator();
+		Iterator<Object> it = list.iterator();
 		for(int i = 0; i<times; i++){
 			result = it.next();
 		}

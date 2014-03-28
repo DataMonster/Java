@@ -1,7 +1,5 @@
 //Describe how you could use a single array to implement three stacks.
-package edu.java;
-
-import java.util.Arrays;
+package edu.java.chap3;
 
 public class ThreeStack {
 	

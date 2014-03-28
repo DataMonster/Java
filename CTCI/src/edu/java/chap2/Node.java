@@ -2,11 +2,16 @@ package edu.java.chap2;
 
 public class Node {
 
-	Node next = null;
+	public Node next = null;
 	int data;
+	public Object data2;
 	
-	public Node(int d){
-		data = d;
+	public Node(int item){
+		data = item;
+	}
+	
+	public Node(Object item){
+		data2 = item;
 	}
 	
 	void appendToTail(int d){
