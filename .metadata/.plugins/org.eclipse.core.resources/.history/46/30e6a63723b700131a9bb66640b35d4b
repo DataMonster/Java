@@ -1,0 +1,45 @@
+package com.java;
+
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+
+public class test3 {
+
+	 Map <Integer, Double> calculateFinalScores (List<TestResult> results) {
+		 
+		 
+		 
+		 
+		 return null;
+		 
+		 
+		 
+	 }
+	
+	public static void main(String[] args) {
+		List<TestResult> results = new LinkedList<TestResult>();
+
+		LinkedList<Integer> result = new LinkedList<Integer>();
+		result.add(3);
+		result.add(97);
+		result.add(77);
+		result.add(77);
+		result.add(79);
+		result.add(91);
+		Object[] arr = result.toArray();
+		Arrays.sort(arr);
+		while(i>arr.length-5){
+		System.out.println(arr[i]);
+		}
+		
+	}
+
+}
+
+class TestResult {
+    int studentId;
+    String testDate;
+    int testScore;
+ }

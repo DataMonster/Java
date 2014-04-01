@@ -1,0 +1,26 @@
+package edu.java.chap9;
+
+public class RobotMove {
+
+	public static int move(int x, int y){
+		if(x == 0 &&y== 0){
+			return 0;
+		} else {
+			if(x==0){
+				return 1+move(x,y-1);
+			}
+			else if(y==0){
+				return 1+move(x-1,y);
+			}
+			else{
+				return move(x-1,y)+move(x,y-1);
+			}
+		}
+	}
+	
+	public static void main(String[] args) {
+		System.out.println(move(0,2));
+
+	}
+
+}

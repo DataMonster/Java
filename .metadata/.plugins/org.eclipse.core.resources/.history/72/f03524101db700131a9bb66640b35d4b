@@ -1,0 +1,25 @@
+package com.java;
+
+import java.util.List;
+
+public class test {
+	
+	public static List<Integer> calculateWindowSums(List<Integer> list, int windowSize) {
+		 
+		
+		return null;
+	}
+
+
+	public static void main(String[] args) {
+		List<Integer> list = new List<Integer>();
+		list.add(4);
+		list.add(2);
+		list.add(73);
+		list.add(11);
+		list.add(-5);
+		
+		
+	}
+
+}

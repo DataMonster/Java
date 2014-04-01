@@ -1,0 +1,68 @@
+package edu.java.chap9;
+
+import java.util.LinkedList;
+
+
+/*
+ * A magic index in an arrayA[0...n-1] is defined to be an index such that A[i]
+ * =i. Given a sorted array, write a method to find a magic index, if one exists, 
+ * in array A.
+ * 
+ * follow up: what if the values are not distinct?
+ */
+
+public class MagicIndex {
+	
+	public static void find(int[] arr, int start, int end) {
+		int middle = (start+end)/2;
+		if(middle ==arr[middle]){
+			System.out.println(arr[middle]);
+			return;
+		} else if(middle<arr[middle]) {
+			find(arr,start,middle);
+		} else {
+			find(arr,middle,end);
+		}
+	}
+	
+	public static void fAll(int[] arr){
+		LinkedList<Integer> list = new LinkedList<Integer>();
+		
+		
+		
+		findAll(arr, 0, arr.length, list);
+		
+		
+		for(int i = 0;i<list.size();i++){
+			System.out.print(list.get(i)+" ");
+		}
+	}
+	
+	public static void findAll(int[] arr, int start, int end,LinkedList<Integer> list) {
+		if(start == end){
+			return;
+		}
+		int middle = (start+end)/2;
+		if(middle ==arr[middle]){
+			list.add(middle);
+			//System.out.println(arr[middle]);
+		} else {
+			
+			findAll(arr,start,middle,list);
+			findAll(arr,middle,end,list);
+		}
+	}
+
+	public static void main(String[] args) {
+		int[] arr1 = {0,1,2,3};
+		int[] arr2 = {0,2,4,6};
+		int[] arr3 = {1,2,2,3,4,4,4};
+		
+		find(arr1,0,arr1.length);
+		find(arr2,0,arr2.length);
+		find(arr3,0,arr3.length);
+		
+		fAll(arr3);
+	}
+
+}
