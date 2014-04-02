@@ -1,0 +1,24 @@
+package edu.java.chap9;
+
+import java.util.LinkedList;
+
+public class AllPermutation {
+
+	public static void getPer(char[] arr, int position, LinkedList<String> list){
+		if()
+	}
+	
+	public static void insert(String target,String that, LinkedList<String> list){
+		for(int i = 0;i<target.length()+1;i++){
+			String result = target.substring(0,i).concat(that).concat(target.substring(i,target.length()));
+			System.out.println(result);
+		}
+	}
+	public static void main(String[] args) {
+		char[] temp = {'a','b','c','d'};
+		String target = "abc";
+		LinkedList<String> list = new LinkedList<String>();
+		insert(target,"d",list);
+	}
+
+}

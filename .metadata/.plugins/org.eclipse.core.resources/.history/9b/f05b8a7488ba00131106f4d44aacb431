@@ -1,0 +1,18 @@
+package edu.java.chap9;
+
+import java.util.LinkedList;
+
+public class AllPermutation {
+
+	public static void insert(String target,String that, LinkedList<String> list){
+		
+	}
+	public static void main(String[] args) {
+		char[] temp = {'a','b','c','d'};
+		String t = "this";
+		String t2 = "s";
+		String t3 = t.substring(0, 0).concat(t2).concat(t.substring(0,t.length()));
+		System.out.println(t3);
+	}
+
+}
