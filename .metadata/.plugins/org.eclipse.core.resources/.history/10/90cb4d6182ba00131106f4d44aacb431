@@ -1,0 +1,22 @@
+package edu.java.chap9;
+
+import java.util.LinkedList;
+
+//write a method to return all subsets of a set.
+
+public class AllSet {
+	
+	public static void find(char[] arr, int position, LinkedList<String> list){
+		if(position ==0){
+			list.add("");
+			return;
+		}
+	}
+
+	public static void main(String[] args) {
+		char[] arr = {'a','b','c','d'};
+		LinkedList<String> list = new LinkedList<String> ();
+		find(arr,0,list);
+	}
+
+}
