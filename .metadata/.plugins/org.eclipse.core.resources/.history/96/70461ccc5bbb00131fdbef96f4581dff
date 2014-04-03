@@ -1,0 +1,61 @@
+package ques1;
+
+import java.util.BitSet;
+
+public class test1 {
+
+	public int solution(String S) {
+		// build letters dictionary
+		// int[] letters = new int[256];
+		BitSet bs = new BitSet(256);
+
+		char[] s_array = S.toCharArray();
+		for (char c : s_array) {
+			bs.flip(c);
+		}
+		int count = 0;
+		for (int i = 0; i < bs.size(); i++) {
+			if (bs.get(i)) {
+				count++;
+			}
+		}
+		if (count < 2) {
+			return 1;
+		}
+		return 0;
+	}
+
+	public static boolean isPalin(String s) {
+		BitSet bs = new BitSet(256);
+
+		char[] s_array = S.toCharArray();
+		for (char c : s_array) {
+			bs.flip(c);
+		}
+		int count = 0;
+		for (int i = 0; i < bs.size(); i++) {
+			if (bs.get(i)) {
+				count++;
+			}
+		}
+		if (count < 2) {
+			return true;
+		}
+		return false;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		BitSet bs = new BitSet(27);
+		bs.flip(2);
+		bs.flip(2);
+		System.out.println(bs.get(0));
+//		for (int i = 0; i < bs.size(); i++) {
+//			System.out.println(bs.get(i));
+//		}
+		
+		String s = "hahaha";
+		System.out.println(isPan(s));
+	}
+
+}
