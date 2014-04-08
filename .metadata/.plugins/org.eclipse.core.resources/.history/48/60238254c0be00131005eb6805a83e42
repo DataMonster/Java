@@ -1,0 +1,39 @@
+package collection1;
+
+/*
+ * Given an input string, reverse the string word by word.
+
+For example,
+Given s = "the sky is blue",
+return "blue is sky the".
+ */
+public class ReverseWords {
+
+public static String reverseWords2(String s) {
+        char[] arr = s.toCharArray();
+        char[] arr2 = new char[arr.length];
+        for(int i = 0;i<arr.length;i++){
+        	arr2[i] = arr[arr.length-1-i];
+        }
+        return new String(arr2);
+    }
+
+public String reverseWords(String s) {
+	char[] arr = s.toCharArray();
+    
+    for(int i = 0;i<arr.length/2;i++){
+    	char temp = arr[i];
+    	arr[i] = arr[arr.length-1-i];
+    	arr[arr.length-1-i] = temp;
+    }
+    return new String(arr);
+}
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s = "the sky is blue";
+		System.out.println(reverseWords(s));
+	}
+
+}
