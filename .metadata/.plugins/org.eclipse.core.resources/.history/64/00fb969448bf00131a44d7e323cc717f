@@ -27,20 +27,14 @@ public class LineMaxPoint {
         }
         
         int max = 0;
-        Iterator<Integer> itx= mpx.values().iterator();
+        Iterator itx= mpx.keySet().iterator();
         while(itx.hasNext()){
-        	int num = itx.next();
-        	if(num>max) {
-        		max = num;
-        	}
+        	if((int)itx.next()>max) max = (int)itx.next();
         }
         
-        Iterator<Integer> ity= mpy.values().iterator();
+        Iterator ity= mpy.keySet().iterator();
         while(ity.hasNext()){
-        	int num = ity.next();
-        	if(num>max) {
-        		max = num;
-        	}
+        	if((int)ity.next()>max) max = (int)ity.next();
         }
         return max;
     }

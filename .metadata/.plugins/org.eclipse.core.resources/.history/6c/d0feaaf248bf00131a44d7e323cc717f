@@ -29,18 +29,12 @@ public class LineMaxPoint {
         int max = 0;
         Iterator<Integer> itx= mpx.values().iterator();
         while(itx.hasNext()){
-        	int num = itx.next();
-        	if(num>max) {
-        		max = num;
-        	}
+        	if(itx.next()>max) max = itx.next();
         }
         
         Iterator<Integer> ity= mpy.values().iterator();
         while(ity.hasNext()){
-        	int num = ity.next();
-        	if(num>max) {
-        		max = num;
-        	}
+        	if(ity.next()>max) max = ity.next();
         }
         return max;
     }

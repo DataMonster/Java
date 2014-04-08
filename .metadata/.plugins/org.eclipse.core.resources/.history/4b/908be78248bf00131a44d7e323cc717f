@@ -1,8 +1,5 @@
 package collection1;
 
-import java.util.HashMap;
-import java.util.Iterator;
-
 
 /*
  * Given n points on a 2D plane, find the maximum number of points that lie on the same straight line.
@@ -10,39 +7,9 @@ import java.util.Iterator;
 public class LineMaxPoint {
 
 	public int maxPoints(Point[] points) {
-        HashMap<Integer,Integer> mpx= new HashMap<Integer, Integer>();
-        HashMap<Integer,Integer> mpy= new HashMap<Integer, Integer>();
+        int[][] result = Matrix(points);
+        return findRow(Matrix(points));
         
-        for(int i = 0;i<points.length;i++){
-        	if(mpx.containsKey(points[i].x)) {
-        		mpx.put(points[i].x,mpx.get(points[i].x)+1);
-        	} else {
-        		mpx.put(points[i].x, 1);
-        	}
-        	if(mpy.containsKey(points[i].y)) {
-        		mpy.put(points[i].y,mpy.get(points[i].y)+1);
-        	} else {
-        		mpy.put(points[i].y, 1);
-        	}
-        }
-        
-        int max = 0;
-        Iterator<Integer> itx= mpx.values().iterator();
-        while(itx.hasNext()){
-        	int num = itx.next();
-        	if(num>max) {
-        		max = num;
-        	}
-        }
-        
-        Iterator<Integer> ity= mpy.values().iterator();
-        while(ity.hasNext()){
-        	int num = ity.next();
-        	if(num>max) {
-        		max = num;
-        	}
-        }
-        return max;
     }
 
 	public int[][] Matrix(Point[] points){
