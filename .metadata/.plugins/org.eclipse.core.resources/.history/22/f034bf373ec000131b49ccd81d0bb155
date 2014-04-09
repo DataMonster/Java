@@ -101,7 +101,7 @@ public class RomanToInt {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println(romanToInt("XXXI"));
-		System.out.println(intToRoman(19));
+		System.out.println(intToRoman(9));
 	}
 
 }

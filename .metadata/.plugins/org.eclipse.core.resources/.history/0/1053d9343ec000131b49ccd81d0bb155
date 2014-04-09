@@ -79,11 +79,7 @@ public class RomanToInt {
 		else if(num>=10&&num<=39){
 			String temp = "X";
 			return temp.concat(intToRoman(num-10));
-		} else if(num>=9&&num<10){
-			String temp = "IX";
-			return temp.concat(intToRoman(num-9));
-		} 
-		else if(num>=5){
+		} else if(num>=5){
 			String temp = "V";
 			return temp.concat(intToRoman(num-5));
 		}
@@ -101,7 +97,7 @@ public class RomanToInt {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println(romanToInt("XXXI"));
-		System.out.println(intToRoman(19));
+		System.out.println(intToRoman(41));
 	}
 
 }
