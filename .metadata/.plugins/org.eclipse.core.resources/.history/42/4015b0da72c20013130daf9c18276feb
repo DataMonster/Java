@@ -36,6 +36,5 @@ public class Wget {
             // display and pause for 20 ms
             StdDraw.show(20); 
 	}
-	}
 
 }
