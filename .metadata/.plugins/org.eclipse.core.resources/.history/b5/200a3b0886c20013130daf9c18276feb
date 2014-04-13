@@ -23,15 +23,7 @@ public class FileTest {
 		String[] fileList = file.list();
 		System.out.println("===========");
 		
-		for(String fileName:fileList){
-			System.out.println(fileName);
-		}
 		
-		File[] roots = File.listRoots();
-		System.out.println("===========");
-		for(File root:roots){
-			System.out.println(root);
-		}
 		
 	}
 
