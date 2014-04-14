@@ -1,0 +1,36 @@
+package edu.java.chap11;
+
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.TreeMap;
+
+/*
+ * Write a method to sort an array of strings so that all the anagrams are next
+ * to each other.
+ */
+
+public class SortStrings {
+	
+	public static void sort(String[] arr){
+		TreeMap<Integer,LinkedList<String>> tm = new TreeMap<Integer,LinkedList<String>>();
+		for(int i = 0;i<arr.length;i++){
+			int len = arr[i].length();
+			if()
+		}
+		
+	}
+
+	public static void main(String[] args) {
+		String[] arr  = {"abe","a","ab","est","-ab","abc","abd","acd","abcd","abcde"};
+		for(int i =0;i<arr.length;i++){
+			System.out.println(arr[i]);
+		}
+		
+		System.out.println("========");
+		Arrays.sort(arr);
+		for(int i =0;i<arr.length;i++){
+			System.out.println(arr[i]);
+		}
+	}
+
+}
