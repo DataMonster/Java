@@ -1,5 +1,7 @@
 package edu.java.chap11;
 
+import java.util.Arrays;
+import java.util.BitSet;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -96,7 +98,7 @@ public class SortStrings {
 	}
 
 	public static void main(String[] args) {
-		String[] arr  = {"abe","a","ab","acb","cab","cba","bac","est","-ab","abc","abd","acd","abcd","abcde"};
+		String[] arr  = {"abe","a","ab","est","-ab","abc","abd","acd","abcd","abcde"};
 		for(int i =0;i<arr.length;i++){
 			System.out.println(arr[i]);
 		}

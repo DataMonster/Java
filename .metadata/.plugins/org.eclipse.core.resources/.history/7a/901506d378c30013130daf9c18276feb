@@ -1,5 +1,7 @@
 package edu.java.chap11;
 
+import java.util.Arrays;
+import java.util.BitSet;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -16,9 +18,8 @@ public class SortStrings {
 		TreeMap<Integer,LinkedList<String>> tm = new TreeMap<Integer,LinkedList<String>>();
 		for(int i = 0;i<arr.length;i++){
 			int len = arr[i].length();
-			//System.out.println("!"+arr[i]);
 			if(tm.containsKey(len)){
-				LinkedList<String> temp = tm.get(len);
+				LinkedList<String> temp = new LinkedList<String>();
 				int size = temp.size();
 				for(int j=0;j<temp.size();j++ ){
 					if(checkAnagrams(temp.get(j),arr[i])){
@@ -26,10 +27,9 @@ public class SortStrings {
 						break;
 					}
 				}
-				if(size==temp.size()){
+				if(size!=temp.size()){
 					temp.add(arr[i]);
 				}
-				tm.put(len,temp);
 			} else {
 				LinkedList<String> temp = new LinkedList<String> ();
 				temp.add(arr[i]);
@@ -38,15 +38,11 @@ public class SortStrings {
 		}
 		String[] result = new String[arr.length];
 		Iterator<Integer> it = tm.keySet().iterator();
-		//System.out.println("!"+tm.size()+" "+tm.keySet().size());
 		int i =0;
 		while(it.hasNext()){
-			LinkedList<String> tt = tm.get(it.next());
-			Iterator<String> it2 = tt.iterator();
-			System.out.println("!"+tt.size());
+			Iterator<String> it2 = tm.get(it.next()).iterator();
 			while(it2.hasNext()){
 				result[i] = it2.next();
-				System.out.println("?"+result[i]);
 				i++;
 			}
 		}
@@ -96,7 +92,7 @@ public class SortStrings {
 	}
 
 	public static void main(String[] args) {
-		String[] arr  = {"abe","a","ab","acb","cab","cba","bac","est","-ab","abc","abd","acd","abcd","abcde"};
+		String[] arr  = {"abe","a","ab","est","-ab","abc","abd","acd","abcd","abcde"};
 		for(int i =0;i<arr.length;i++){
 			System.out.println(arr[i]);
 		}
