@@ -1,0 +1,17 @@
+package mercury;
+
+public class test1 {
+
+	public static Character check(String s){
+		int[] letters = new int[256];
+		
+		return null;
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println((char)68);
+		System.out.println(check(""));
+	}
+
+}

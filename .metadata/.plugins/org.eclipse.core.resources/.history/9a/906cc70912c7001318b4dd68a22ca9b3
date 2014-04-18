@@ -1,0 +1,53 @@
+package mercury;
+
+import java.util.LinkedList;
+
+public class test2 {
+
+	public static Double getResult(String s) {
+		LinkedList list = new LinkedList();
+		StringBuffer sb = new StringBuffer();
+
+		for (int i = 0; i < s.length(); i++) {
+			char temp = s.charAt(i);
+			if (temp == '+' || temp == '-' || temp == '*' || temp == '/') {
+				// first add values to the list then add the operator to the
+				// list
+				String num = sb.toString();
+				if (num.length() < 1) {
+					list.add(0);
+				} else {
+					list.add(Integer.parseInt(num));
+				}
+				sb.delete(0, sb.length());
+				list.add(temp);
+			} else {
+				// if i is not reaching to the end of the string, append the
+				// number to stringbuffer
+				if (i != s.length() - 1) {
+					sb.append(temp);
+				} else {
+					//i is the end of the string, add the value to list
+					sb.append(temp);
+					String num = sb.toString();
+					if (num.length() < 1) {
+						list.add(0);
+					} else {
+						list.add(Integer.parseInt(num));
+					}
+					sb.delete(0, sb.length());
+				}
+			}
+		}
+
+		for (int i = 0; i < list.size(); i++) {
+			System.out.println(list.get(i));
+		}
+		return null;
+	}
+
+	public static void main(String[] args) {
+		System.out.print(getResult("-33+2+476//5-1"));
+	}
+
+}

@@ -1,0 +1,26 @@
+package mercury;
+
+public class test1 {
+
+	public static Character check(String s){
+		int[] letters = new int[256];
+		//System.out.println(letters[2]);
+		for(int i = 0;i<s.length();i++){
+			letters[s.charAt(i)]++;
+		}
+		for(int i = 0;i<letters.length;i++){
+			if(letters[i]>s.length()/2){
+				return (char)i;
+			}
+			//System.out.print(letters[i]);
+		}
+		return null;
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println((char)68);
+		System.out.println(check("abadacababaaaaa"));
+	}
+
+}
