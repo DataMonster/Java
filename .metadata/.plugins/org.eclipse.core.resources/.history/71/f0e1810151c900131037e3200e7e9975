@@ -10,17 +10,6 @@ beyond the new length.
 
 public class RemoveElement {
 
-	public int removeElement(int[] A, int elem) {
-		int sum = 0;
-		for(int i = 0;i<A.length;i++){
-			if(A[i]==elem){
-				sum++;
-			} else if(sum > 0){
-				A[i-sum] = A[i];
-			}
-		}
-		return A.length-sum;
-    }
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
