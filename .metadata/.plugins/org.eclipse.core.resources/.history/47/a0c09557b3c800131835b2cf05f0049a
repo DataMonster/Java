@@ -1,0 +1,26 @@
+package edu.java.thread;
+
+//implement runnable and overwrite run method
+//initiate runnable class and use this instance as the target of thread, then start
+public class ThreadTest2 implements Runnable{
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//use new Thread(target, name) to get start
+		new Thread(new ThreadTest2(), "1").start();
+		new Thread(new ThreadTest2(), "1").start();
+	}
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		for(int i=0;i<4;i++){
+			System.out.println(Thread.currentThread().getName()+" "+i);
+			
+		}
+	}
+
+}

@@ -1,0 +1,32 @@
+package edu.java.thread;
+
+public class Sync {
+
+	
+	
+	public static void main(String[] args) {
+		
+	}
+
+}
+
+class account {
+	private String accountNo;
+	private double balance;
+	
+	public account(String accoutNo, double balance){
+		this.accountNo = accoutNo;
+		this.balance = balance;
+	}
+	//ignore the accountNo and balance properties getter and setter
+	public int hashCode() {
+		return accountNo.hashCode();
+	}
+	public boolean equals(Object obj){
+		if(obj !=null && obj.getClass() == account.class){
+			account target = (account)obj;
+			return target.accountNo.equals(accountNo);
+		}
+		return false;
+	}
+}

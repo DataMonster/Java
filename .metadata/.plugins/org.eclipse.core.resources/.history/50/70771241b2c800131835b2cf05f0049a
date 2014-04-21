@@ -1,0 +1,26 @@
+package edu.java.thread;
+
+//extends thread class and rewrite run method
+//when init
+public class ThreadTest extends Thread {
+	private int i=0;
+	
+	public void run(){
+		for(;i<4;i++){
+			System.out.println(getName()+"   "+i);
+			
+		}
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println(Thread.currentThread().getName());
+		new ThreadTest().start();
+		System.out.println(Thread.currentThread().getName());
+		new ThreadTest().start();
+		System.out.println(Thread.currentThread().getName());
+		new ThreadTest().start();
+		new ThreadTest().getId();	
+	}
+
+}
