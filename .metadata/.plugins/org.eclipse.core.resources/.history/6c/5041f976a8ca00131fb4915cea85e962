@@ -9,8 +9,7 @@ import java.net.URLEncoder;
 //use InetAddress
 //url decoder
 //url encoder
-//url and urlconnection
-//url is a special uri(uniform resource identifier)
+
 public class address {
 
 	/*
@@ -36,7 +35,6 @@ public class address {
 		System.out.println(url);
 	}
 	
-	//public static 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		String num = "n";

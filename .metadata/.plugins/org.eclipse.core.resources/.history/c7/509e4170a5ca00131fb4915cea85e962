@@ -1,0 +1,29 @@
+package edu.java.net;
+
+import java.io.IOException;
+import java.net.InetAddress;
+
+//use InetAddress
+public class address {
+
+	/*
+	 * 
+	 * 
+	 */
+	public static void test1(String num) throws IOException{
+		InetAddress ip = InetAddress.getByName("www.oneedu.cn");
+		System.out.println(ip.isReachable(1000));
+		System.out.println(ip.getHostName());
+		//InetAddress ip2 = 
+	}
+	
+	
+	
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		String num = "n";
+		test1(num);
+		
+	}
+
+}
