@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;ReorderList.java&apos; to &apos;LEET/src/collection3&apos;&#x0D;&#x0A;- Original project: &apos;LEET&apos;&#x0D;&#x0A;- Destination element: &apos;LEET/src/collection3&apos;&#x0D;&#x0A;- Original element: &apos;ReorderList.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;collection3" element1="/src&lt;{ReorderList.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1398179633424" units="1" version="1.0"/>
+</session>
