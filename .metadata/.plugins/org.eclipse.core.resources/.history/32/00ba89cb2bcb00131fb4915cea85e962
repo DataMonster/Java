@@ -42,7 +42,6 @@ public class address {
 		String num = "n";
 		test1(num);
 		urlcodetest();
-		//TreeSet ts = new TreeSet();
 		
 	}
 
