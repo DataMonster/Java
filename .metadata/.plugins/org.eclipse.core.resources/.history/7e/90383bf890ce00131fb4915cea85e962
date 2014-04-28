@@ -34,26 +34,10 @@ public class BasicMan {
 		}
 	}
 	
-	/*
-	 * if x = 0: return (q; r) = (0; 0)
-		(q; r) = divide(x/2; y)
-		q = 2 * q; r = 2 * r
-		if x is odd: r = r + 1
-		if r >= y: r = r - y; q = q + 1
-	 */
-	public static void divide(int x, int y){
-		int[] remain = {0,0};
-		
-	}
-	
-	public static void modularEx(){
-		
-	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		addition();
 		System.out.println(multi(11,13,13));
-		
 	}
 
 }
