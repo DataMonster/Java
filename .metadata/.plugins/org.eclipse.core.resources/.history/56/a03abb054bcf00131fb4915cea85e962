@@ -1,0 +1,33 @@
+package edu.java.thread;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class ThreadPool {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// create a thread pool with set number
+		ExecutorService pool = Executors.newFixedThreadPool(3);
+		
+		Thread t1 = new MyThread();
+		Thread t2 = new MyThread();
+		Thread t3 = new MyThread();
+
+		pool.execute(t1);
+		pool.execute(t2);
+		pool.execute(t3);
+		pool.shutdown();
+		
+	}
+
+}
+
+class MyThread extends Thread{
+	
+	public void run() {
+		System.out.println(Thread.currentThread().getName());
+	}
+}
