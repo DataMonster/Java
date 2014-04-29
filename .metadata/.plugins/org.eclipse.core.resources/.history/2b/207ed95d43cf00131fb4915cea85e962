@@ -7,12 +7,7 @@ public class Daemon {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		Thread t1 = new MyCommon();
-		Thread t2 = new Thread(new MyDaemon());
-		//t2.setDaemon(true);
-		
-		t2.start();
-		t1.start();
+		// TODO Auto-generated method stub
 
 	}
 
