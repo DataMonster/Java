@@ -1,0 +1,24 @@
+package edu.java.thread;
+
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.BlockingQueue;
+
+public class blockqueue {
+
+	public static void demo1() throws InterruptedException{
+		BlockingQueue bq = new ArrayBlockingQueue(20);
+		for(int i = 0;i<30;i++){
+			bq.put(i);
+			System.out.println("add element: "+i);
+		}
+		System.out.println("end!");
+		return;
+	}
+	
+	//this piece of code is used for
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		demo1();
+	}
+
+}
