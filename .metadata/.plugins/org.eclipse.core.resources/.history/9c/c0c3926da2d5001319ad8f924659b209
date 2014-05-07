@@ -17,8 +17,6 @@ public class ValidPalindrome {
 				 sb.append(s.charAt(i));
 			 } else if(s.charAt(i)>64&&s.charAt(i)<91){
 				 sb.append((char)(s.charAt(i)+32));
-			 } else if(s.charAt(i)>47&&s.charAt(i)<58){
-				 sb.append(s.charAt(i));
 			 }
 		}
 		String temp = sb.toString();
@@ -44,12 +42,12 @@ public class ValidPalindrome {
 				continue;
 			}*/
 		
-		System.out.println(temp);
+		//System.out.println(temp);
         return true;
     }
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		char a = '9';
+		char a = 'a';
 		int b ='b';
 		char c = 'A';
 		char d = 'Z';

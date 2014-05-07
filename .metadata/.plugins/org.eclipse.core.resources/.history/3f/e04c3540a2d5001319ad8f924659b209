@@ -17,8 +17,6 @@ public class ValidPalindrome {
 				 sb.append(s.charAt(i));
 			 } else if(s.charAt(i)>64&&s.charAt(i)<91){
 				 sb.append((char)(s.charAt(i)+32));
-			 } else if(s.charAt(i)>47&&s.charAt(i)<58){
-				 sb.append(s.charAt(i));
 			 }
 		}
 		String temp = sb.toString();
@@ -49,7 +47,7 @@ public class ValidPalindrome {
     }
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		char a = '9';
+		char a = 'a';
 		int b ='b';
 		char c = 'A';
 		char d = 'Z';
@@ -60,7 +58,7 @@ public class ValidPalindrome {
 		System.out.println((int)d);
 		System.out.println((int)e);
 		
-		System.out.println(isPalindrome("1a2"));
+		System.out.println(isPalindrome(""));
 		System.out.println(isPalindrome("A man, a plan, a canal: Panama"));
 	}
 
