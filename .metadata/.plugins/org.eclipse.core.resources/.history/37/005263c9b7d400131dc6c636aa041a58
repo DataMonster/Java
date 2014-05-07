@@ -1,0 +1,15 @@
+package collection3;
+
+public class sqrtfunction {
+
+	public static int sqrt7 (int x){
+		x+=127<<23;
+		x>>=1;
+		return x;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println(sqrt7(16));
+	}
+
+}
