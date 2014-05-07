@@ -1,0 +1,61 @@
+package collection3;
+
+import java.util.ArrayList;
+
+/*
+ * Given a matrix of m x n elements (m rows, n columns), return all elements of the matrix in spiral order.
+
+For example,
+Given the following matrix:
+
+[
+ [ 1, 2, 3 ],
+ [ 4, 5, 6 ],
+ [ 7, 8, 9 ]
+]
+You should return [1,2,3,6,9,8,7,4,5].
+ */
+public class SpiralMatrix {
+	
+	public static ArrayList<Integer> spiralOrder(int[][] matrix) {
+        ArrayList<Integer> arr = new ArrayList<Integer>();
+		int posup = 0;
+        int posdown = matrix.length-1;
+        int posleft = 0;
+        int posright = matrix[0].length-1;
+        
+        //put the up line
+        while(true){
+        for(int i = 0;i<matrix[0].length;i++){
+        	arr.add(matrix[posup][i]);
+        }
+        posup++;
+        for(int i = 1;i<matrix.length;i++){
+        	arr.add(matrix[i][posright]);
+        }
+        posright--;
+        if(posup>=posdown){
+        	break;
+        } else{
+        	for(int i = matrix[0].length-2;i>0;i--){
+        		arr.add(matrix[posdown][i]);
+        	}
+        	posdown--;
+        	for(int i = matrix.length-1;i>0;i--){
+        		arr.add(matrix[posleft][i]);
+        	}
+        	posleft++;
+        }
+        }
+        for(int i = 0;i<arr.size();i++){
+        	System.out.print(arr.get(i)+" ");
+        }
+        return arr;
+    }
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		spiralOrder(new int[][] {{1,2,3},{4,5,6},{7,8,9}});
+	}
+
+}

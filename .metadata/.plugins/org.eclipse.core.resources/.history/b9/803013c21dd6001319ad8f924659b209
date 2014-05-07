@@ -1,0 +1,16 @@
+package collection3;
+
+public class POW {
+
+	public static double pow(double x, int n) {
+        if(n<0) return 0.0;
+        if(n==0) return 1;
+		if(n==1) return x;
+        return pow(x*x,n-1);
+    }
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println(pow(1,100));
+	}
+
+}
