@@ -7,11 +7,7 @@ public class InsertInterval {
 	public ArrayList<Interval> insert(ArrayList<Interval> intervals, Interval newInterval) {
         int first = find(newInterval.start,intervals);
         int second = find(newInterval.end,intervals);
-        if(second>intervals.size()){
-        	if(first>intervals.size()){
-        		intervals.add(new Interval(first,second));
-        	} 
-        }
+        
         if(first!=second){
         	intervals.get(first).end = intervals.get(second).end;
         	for(int i = 0;i<second-first;i++){
@@ -26,7 +22,7 @@ public class InsertInterval {
 				return i;
 			}
 		}
-		return intervals.size();
+		return intervals.size()-1;
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
