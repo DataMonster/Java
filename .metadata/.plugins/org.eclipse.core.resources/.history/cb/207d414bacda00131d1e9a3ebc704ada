@@ -1,0 +1,12 @@
+package ques1;
+
+public class test3 {
+
+	public static void test(){
+		
+	}
+	public static void main(String[] args) {
+		test();
+	}
+
+}

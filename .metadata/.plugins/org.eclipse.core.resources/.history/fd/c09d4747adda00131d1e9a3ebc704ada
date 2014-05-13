@@ -1,0 +1,49 @@
+package ques1;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Hashtable;
+import java.util.LinkedList;
+
+public class test3 {
+
+	    public static LinkedList<String> letterCombinations(String digits) {
+	    	Hashtable<Integer,String>  hs = new Hashtable <Integer, String> ();
+	        hs.put(0,"");
+	    	hs.put(1,"ABC");
+	        hs.put(2,"DEF");
+	        hs.put(3,"GHI");
+	        hs.put(4,"JKL");
+	        hs.put(5,"MNO");
+	        hs.put(6,"PQR");
+	        hs.put(7,"STU");
+	        hs.put(8,"VWX");
+	        hs.put(9,"YZ");
+	        
+	        LinkedList<String> res = new LinkedList<String>();
+	        LinkedList<String> preres = new LinkedList<String>();
+	        res.add("");
+
+	        for(int i=0;i<digits.length();i++){
+	            for(String str: res){
+	                String letters = hs.get((int)digits.charAt(i));
+	                System.out.println("!"+i+" "+hs.get(2));
+	                for(int j=0;j<letters.length();j++)
+	                    preres.add(str+letters.charAt(j));
+	            }
+	            res = preres;
+	            preres = new LinkedList<String>();
+	        }      
+	        
+	        for(String s:res){
+	        System.out.println(s);
+	        }
+	        return res;
+	    }
+
+	public static void main(String[] args) {
+		String s = "212";
+		System.out.println(letterCombinations(s));
+	}
+
+}
