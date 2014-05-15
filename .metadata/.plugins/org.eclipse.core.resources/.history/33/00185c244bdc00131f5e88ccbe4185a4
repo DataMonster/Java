@@ -1,0 +1,62 @@
+package collection3;
+
+/*
+ * There are two sorted arrays A and B of size m and n respectively. Find the
+ *  median of the two sorted arrays. The overall run time complexity should
+ be O(log (m+n)).
+ */
+public class MedianSorted {
+
+	public static double findMedianSortedArrays(int A[], int B[]) {
+		if(A==null &&B==null) return 0.0;
+		if(A==null){
+			if(B.length%2==0){
+				return ((double)B[B.length/2-1]+(double)B[B.length])/2;
+			} else {
+				return (double)B[B.length/2];
+			}
+		} 
+		
+		if(B==null){
+			if(A.length%2==0){
+				return ((double)A[A.length/2-1]+(double)A[A.length])/2;
+			} else {
+				return (double)A[A.length/2];
+			}
+		}
+		
+		return -1.0;
+		//if(A[A.length-1]>B[0]&&A.length>=B.length) return A[]
+		//return findk(A, B,);
+	}
+	
+	public static double findk(int A[], int B[], int pos){
+		//pos-1;
+		int valuea = A[(A.length-1)/2];
+		int posb = pos-1-(A.length-1)/2;
+		if(valuea>B[posb-1]&&valuea<B[posb]){
+			return (double)valuea;
+		} else if(valuea<B[posb-1]){
+			
+		} else if(valuea>B[posb]){
+			
+		}
+		return 0.0;
+	}
+
+	public static int findone(int A[], int start, int end, int pos){
+		return A[start+pos];
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//test 1: A= null, B = null
+		System.out.println(findMedianSortedArrays(null,null));
+		//test 2: A[1,2,3], B = null
+		int[] a = {1,2,3};
+		System.out.println(findMedianSortedArrays(a,null));
+		//test 3: A null, B [2,4,5,7]
+		int[] b = {2,4,5,7};
+		System.out.println(findMedianSortedArrays(null,b));
+	}
+
+}

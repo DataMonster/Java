@@ -99,12 +99,6 @@ public class MedianSorted {
 		//test 4: A [1,2,3] B[5,7,9]
 		int[] c={5,7,9};
 		System.out.println(findMedianSortedArrays(a,c));
-		
-		//test 5: d[5,6,7] e[1,2,3,4]
-		int[] d = {5,6,7};
-		int[] e = {1,2,3,4};
-		System.out.println(findMedianSortedArrays(d,e));
-		
 	}
 
 }
