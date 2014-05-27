@@ -1,0 +1,14 @@
+package ques2;
+
+public class practice {
+
+	public int question1 (String file){
+		file  = ""
+		return 0;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

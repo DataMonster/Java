@@ -1,0 +1,60 @@
+package ques2;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+
+public class practice {
+
+	public int question1(String fileName) {
+		fileName = "out.txt";
+		File file = new File(fileName);
+		BufferedReader reader = null;
+		int result = 0;
+		try {
+			reader = new BufferedReader(new FileReader(file));
+			String tempString = null;
+			int pos = 0;
+			while ((tempString = reader.readLine()) != null) {
+				String[] s = tempString.split(" ");
+				ArrayList<Integer> al = new ArrayList<Integer>();
+				for(int i = 0;i<s.length;i++){
+					if(!s[i].equals("")){
+						al.add(Integer.parseInt(s[i]));
+					}
+				}
+				if(pos+1<al.size()){
+					if(al.get(pos)>al.get(pos+1)){
+						result += al.get(pos);
+					} else {
+						result +=al.get(pos+1);
+						pos++;
+					}
+				} else {
+					result += al.get(pos);
+				}
+				//System.out.println("!!"+result);
+			}
+			reader.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			if (reader != null) {
+				try {
+					reader.close();
+				} catch (IOException e1) {
+				}
+			}
+		}
+		return result;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		practice p = new practice();
+		p.question1("");
+	}
+
+}

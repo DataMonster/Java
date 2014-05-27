@@ -1,0 +1,3 @@
+eclipse.preferences.version=1
+module-start-timeout=300000
+runtimes=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<runtimes>\r\n  <runtime id\="Apache Tomcat v7.0" location\="J\:/tomcat7" name\="Apache Tomcat v7.0" runtime-type-id\="org.eclipse.jst.server.tomcat.runtime.70" timestamp\="0" vm-install-id\="1401074240174" vm-install-type-id\="org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType"/>\r\n  <runtime gae-sdk-name\="App Engine" gae-sdk-version\="1.9.5" id\="Google App Engine" location\="J\:/eclipse-j2ee/eclipse/plugins/com.google.appengine.eclipse.sdkbundle_1.9.5/appengine-java-sdk-1.9.5/" name\="Google App Engine" runtime-type-id\="com.google.appengine.runtime.id1" timestamp\="0"/>\r\n</runtimes>\r\n

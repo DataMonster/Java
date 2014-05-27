@@ -1,0 +1,58 @@
+package ques2;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+
+public class practice {
+
+	public int question1(String fileName) {
+		fileName = "out.txt";
+		File file = new File(fileName);
+		BufferedReader reader = null;
+		int result = 0;
+		try {
+			//System.out.println("Read file by line: ");
+			reader = new BufferedReader(new FileReader(file));
+			String tempString = null;
+			int pos = 0;
+			while ((tempString = reader.readLine()) != null) {
+				// line number
+				//tempString = tempString.substring(0, tempString.length()-2);
+				String[] s = tempString.split(" ");
+				ArrayList<Integer> al = new ArrayList<Integer>();
+				for(int i = 0;i<s.length;i++){
+					if(!s[i].equals("")){
+						al.add(Integer.parseInt(s[i]));
+					}
+				}
+				for(int i = 0;i<al.size();i++){
+					System.out.print(al.get(i)+"!");
+				}
+				System.out.println(s.length+" "+s[0]);
+				//System.out.print("line " + line + ": " + tempString);
+				//line++;
+			}
+			reader.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			if (reader != null) {
+				try {
+					reader.close();
+				} catch (IOException e1) {
+				}
+			}
+		}
+		return result;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		practice p = new practice();
+		p.question1("");
+	}
+
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>CODE PRACTICE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- The styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        background:url('img/bg.gif');
+        padding-top: 60px;
+        /*padding-bottom: 40px;*/
+      }
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+     <link href="css/global.css" rel="stylesheet">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">Code</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">Question 1</a></li>
+              <li><a href="#about">Question 2</a></li>
+              <li><a href="#about">Question 3</a></li>
+              <li><a href="#about">Info</a></li>
+            </ul>
+            <form class="navbar-form pull-left">
+              <input class="span2" type="text" placeholder="Please enter key word">
+              <button type="submit" class="btn btn-info">Search</button>
+            <a class="btn btn-primary">Add</a>
+            </form>
+<!--              <div class="btn-group pull-right">
+                  <button class="btn">login </button>
+                  <button class="btn">sign up</button>
+              </div>-->
+              <div class="btn-group pull-right">
+                  <button class="btn">Zihan Wang</button>
+                  <button class="btn dropdown-toggle" data-toggle="dropdown">
+                      <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                      <li><a>Info</a></li>
+                      <li><a>Resume</a></li>
+                      <li><a>1 </a></li>
+                      <li><a>2 </a></li>
+                      <li><a>3 </a></li>
+                  </ul>
+                 
+              </div>
+              <div class="pull-right">
+                  <a class="btn">Log out</a>
+              </div>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="row">
+          <div class="span8">
+              <div class="content">
+                    <div class="content-header"><h3>General, About this code practice</h3>
+                    </div>
+                    <div class="content-list">
+                        This practical includes two main parts, front-end design and algorithm implementation.
+                    </div>
+              </div>
+          </div>
+          <div class="span4">
+              <div class="content-right">
+                  <div class="user_info">
+                      <h4>Join us</h4>
+                      <p>short info  </p>
+                      <a class="btn btn-primary">Sign Up</a>
+                      <p>sign in</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+        
+<!--    <footer>
+        <p>&copy; Company 2013</p>
+        </footer>-->
+    </div>
+      <!-- /container end-->
+   
+      <!--footer-->
+      <div class="footer">
+          <p>
+              <a>Contact </a>|
+              <a>About</a>
+          </p>
+          <p>&copy; Zihan 2013</p>
+      </div>
+      <!--/footer-->
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    
+  </body>
+</html>

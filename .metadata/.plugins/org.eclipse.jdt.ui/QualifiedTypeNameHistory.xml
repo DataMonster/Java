@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.io.BufferedReader"/>
 <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
 <fullyQualifiedTypeName name="edu.java.common3.Cow.CowLeg"/>
 <fullyQualifiedTypeName name="edu.java.common3.Cow.StaticInnerClass"/>
@@ -46,5 +45,9 @@
 <fullyQualifiedTypeName name="java.util.concurrent.LinkedBlockingQueue"/>
 <fullyQualifiedTypeName name="java.util.concurrent.LinkedBlockingDeque"/>
 <fullyQualifiedTypeName name="java.math.BigInteger"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="java.io.BufferedReader"/>
+<fullyQualifiedTypeName name="java.io.FileReader"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>

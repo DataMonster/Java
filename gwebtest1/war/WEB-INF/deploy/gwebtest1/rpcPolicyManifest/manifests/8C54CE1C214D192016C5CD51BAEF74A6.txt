@@ -1,0 +1,2 @@
+serviceClass: gweb.content.client.GreetingService
+path: 5B79FC499425E240E359ED1DB665DF9B.gwt.rpc
