@@ -26,9 +26,7 @@ public class SortLinkedList {
 	}
 	
 	public static void mergeSort(ListNode node, int low, int high){
-		if(low<high){
-			//mergeSort();
-		}
+		
 	}
 	public static void merge(ListNode node, int low,int middle, int high){
 		

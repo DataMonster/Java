@@ -20,19 +20,14 @@ public class SortLinkedList {
 			middle = middle.next;
 		}
 		//System.out.println(middle.val);
-		mergeSort(head, 0,len);
-		
+		//mergeSort()
 		return null;
 	}
 	
-	public static void mergeSort(ListNode node, int low, int high){
-		if(low<high){
-			//mergeSort();
-		}
-	}
-	public static void merge(ListNode node, int low,int middle, int high){
+	public static void mergeSort(){
 		
 	}
+	
 	public static void main(String[] args){
 		ListNode n1 = new ListNode(1);
 		n1.next = new ListNode(4);
