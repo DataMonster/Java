@@ -1,0 +1,21 @@
+package collection4;
+
+public class SortLinkedList {
+	public static ListNode sortList(ListNode head) {
+		return null;
+	}
+	
+	public void static main(String[] args){
+		
+	}
+}
+
+class ListNode {
+	int val;
+	ListNode next;
+
+	ListNode(int x) {
+		val = x;
+		next = null;
+	}
+}

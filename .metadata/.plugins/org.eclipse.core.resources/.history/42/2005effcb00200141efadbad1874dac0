@@ -1,0 +1,28 @@
+package collection4;
+
+public class SortLinkedList {
+	public static ListNode sortList(ListNode head) {
+		//find the length of the linkedlist
+		//if len is 0 or 1, skip the sort
+		//else, use merge sort
+		if(head == null || head.next == null){
+			return head;
+		}
+		
+		return null;
+	}
+	
+	public static void main(String[] args){
+		
+	}
+}
+
+class ListNode {
+	int val;
+	ListNode next;
+
+	ListNode(int x) {
+		val = x;
+		next = null;
+	}
+}
