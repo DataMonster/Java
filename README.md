@@ -3,4 +3,4 @@ Java
 
 java projects
 
-And some more thoughts
+And some more thoughts for coding
